@@ -6,7 +6,7 @@
     border-left: solid 6px #dddddd;
 }
 
-h1, h2, h3, p, a, li {
+h1, h2, h3, p, p, a, li {
     font-family: "Lato";
     font-weight: 100;
 }
@@ -48,10 +48,15 @@ header ul li{
 header ul li a {
     color: #dddddd;
     line-height:1.5;
+    text-decoration: none;
+    border-bottom: solid 2px #dddddd;
+    padding-bottom: 3px;
 }
 
 header ul li a:hover {    
     color: black;
+    border-bottom: solid 2px black;
+    padding-bottom: 3px;    
 }
 
 h3 {
@@ -68,7 +73,7 @@ p {
     line-height: 1.5;
 }
 
-a {
+p a {
     color: #DD0000;
 }
 
@@ -76,18 +81,35 @@ a:hover {
     color: #AA0000;
 }
 
-.continue {
-    float: right;
+article {
+    padding-bottom: 56px;
+    border-bottom: 1px #cccccc solid;
 }
 
 .date {
     color: #cccccc;
+    margin: 54px 0 0 0;
 }
 
 .title {
     color: black;
 }
 
-#copy{
+.continue a {
+    float: right;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+footer {
+    margin: 50px 0 0 0;
+}
+
+/*hr {
+    margin: 40px 0;
+    clear: both;
+    color: #dddddd;*/
+
+#copyright{
     color: #bbbbbb;
 }
