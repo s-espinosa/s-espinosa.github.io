@@ -1,0 +1,88 @@
+/** {
+	border: white 1px solid;
+}
+*/
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: black;
+}
+
+nav a {
+	padding: 30px;
+	float: left;
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	background-color: #FF752C;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+h1 {
+	text-indent: -99999px;
+
+}
+
+#quote p {
+	float: left;
+	padding: 0;
+	width: 720px;
+}
+
+#quote img {
+	float:right;
+	padding: 0;
+}
+
+.third {
+	width: 300px;
+	float: left;
+}
+
+footer {
+	padding: 40px;
+	background-color: black;
+	color: white;
+}
+
+#blog {
+	width: 120px;
+	float: left;
+}
+
+#text {
+	width: 720px;
+	float: left;
+}
+
+#meta {
+	width: 120px;
+	float: left;
+}
+
+#new {
+	clear:both;
+}
+
+#copy {
+	float: left;
+}
+
+#theme {
+	float: right;
+}
