@@ -57,7 +57,7 @@ footer a {
 
 
 /*headers*/
-h1, h2, h3, p, a, li {
+h1, h2, h3, p, a, li, time {
     font-family: "Lato";
     font-weight: 100;
 }
@@ -82,24 +82,27 @@ h2 {
     margin-left: 10px;
 }
 
-h3 {
+article h1 {
     font-size: 36px;
     line-height: 1.5;
-}
-
-.date {
-    color: #cccccc;
-    margin: 54px 0 0 0;
-}
-
-.title {
     color: black;
+    margin: 0;
 }
 
-h4 {
+time {
+    display: block;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #cccccc;
+    margin: 45px 0 0 0;
+}
+
+aside h1 {
     font-family: "Lato";
     font-size: 18px;
     line-height: 1.5;
+    color: #888888;
+    font-weight: 700;
 }
 
 
