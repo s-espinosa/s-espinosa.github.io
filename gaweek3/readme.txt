@@ -1,4 +1,4 @@
-Colors
+Done
 
 Body
 #333333
@@ -11,9 +11,6 @@ Navigation Hover
 
 Footer Headings
 #CCCCCC
-
-Footer Text (already inherited from body)
-#333333
 
 Anchors
 #1FA2E1
@@ -35,6 +32,9 @@ Content
 Home Boxes:
 290px with 40px margin
 
+Footer Text (already inherited from body)
+#333333
+
 Footer Columns:
 210px, 400px, 210px
 30px margins
@@ -42,6 +42,10 @@ Footer Columns:
 Footer Text:
 #515151
 13px
+
+
+
+
 
 Some Possible Elements, IDs and Classes You Might Use
 -----------------------------------------------------
