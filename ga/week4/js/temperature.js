@@ -54,6 +54,11 @@ function colorChange() {
 
 // generic change percentages to byte values
 function byteConvert(percent) {
+	if (percent>100) {
+		percent = 100;
+	} else if (percent < 0) {
+		percent = 0;
+	}
 	var byteNumber = (percent/100*255).toFixed(0);
 	return byteNumber;
 }
