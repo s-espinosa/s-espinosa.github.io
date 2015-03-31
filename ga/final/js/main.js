@@ -12,14 +12,14 @@ var padBackOn = "67A7CE";
 var padBackOnBlink = "#7FC8F6";
 
 // instrument pattern arrays
-var bassPattern = [];
+var kickPattern = [];
 var snarePattern = [];
 var highPattern = [];
 var highOpenPattern = [];
 
 // initial beat per minute values
 var bpm = 100; //100 beats per minute hard coded for now
-var mspbeat = (60*1000)/100; //600 milliseconds for each beat
+var mspbeat = (60*1000)/bpm; //600 milliseconds for each beat
 var msp16th = mspbeat/4; //150 milliseconds for each sixteenth note => each pad for 32 pads assuming 2 measures.
 // var frequency = 600/(padsArray.length/2);
 
@@ -55,7 +55,7 @@ function blinkOn() {
 
 // set delays for blinking behavior on each pad (repeating from the beginning is handled by setInterval in original call from onclick)
 function howToBlink(padElement, count) {
-	if (bassPattern[padElement.getAttribute("padNumber")] === 0) {
+	if (kickPattern[padElement.getAttribute("padNumber")] === 0) {
 		setTimeout(function() {padElement.style.backgroundColor = padBackOffBlink;}, msp16th*(count));
 		setTimeout(function() {padElement.style.backgroundColor = padBackOff;}, msp16th*(count+1));
 	} else {
@@ -79,11 +79,13 @@ document.getElementById("stop").onclick = function() {
 
 
 function howToPlay(count) {
-	if (bassPattern[count] == 0) {
-		setTimeout(function() {document.getElementById("silence").play();}, msp16th*count);
+	if (kickPattern[count] == 0) {
+		return;
 	} else {
-		setTimeout(function() {document.getElementById("kick").play();}, msp16th*count);
-		console.log(bassPattern);
+		setTimeout(function() {
+			var snd = new Audio("audio/kick.wav");
+			snd.play();
+		}, msp16th*(count));
 	}
 }
 
@@ -102,14 +104,14 @@ function howToPlay(count) {
 function setPads() {
 	for (i=0; i < padsArray.length; i++) {
 		padsArray[i].setAttribute("padNumber", i);
-		bassPattern.push(0);
+		kickPattern.push(0);
 		padsArray[i].onclick = function() {
 			var padNumber = this.getAttribute("padNumber");
-			if (bassPattern[padNumber] == 0) {
-				bassPattern[padNumber] = 1;
+			if (kickPattern[padNumber] == 0) {
+				kickPattern[padNumber] = 1;
 				this.style.backgroundColor = padBackOn;
 			} else {
-				bassPattern[padNumber] = 0;
+				kickPattern[padNumber] = 0;
 				this.style.backgroundColor = padBackOff;		
 			}
 		}	
