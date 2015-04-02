@@ -1,6 +1,6 @@
-* {
+/** {
 	border: 1px solid black;
-}
+}*/
 
 body {
 	font-family: sans-serif;
@@ -36,12 +36,12 @@ p {
 
 .left {
 	float: left;
-	padding: 20px;
+	padding: 10px;
 }
 
 .right {
 	float: right;
-	padding: 20px;
+	padding: 10px;
 }
 
 .wrapper {
