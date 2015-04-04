@@ -71,6 +71,15 @@ function colorChange() {
 
 	// change text color if background too dark
 	// this could be updated to give better values for 0, 0, 255 background (100% blue)
+	// var byteRedText = 255 - byteRed;
+	// var byteGreenText = 255 - byteGreen;
+	// var byteBlueText = 255 - byteBlue;
+
+
+	// var rgbText = "rgb("+byteRedText+","+byteGreenText+","+byteBlueText+")";
+
+	// changeText(rgbText);
+
 	if (redPercent<=50 && greenPercent<=50 && bluePercent<=50) {
 		changeText("white");
 	} else if (redPercent>=50 || greenPercent>=50 || bluePercent>=50) {
