@@ -2,6 +2,16 @@
 	border: black solid 1px;
 }*/
 
+#bpmSlider {
+	float: left;
+	width: 458px;
+	margin: 32px 0 0 10px;
+}
+
+#bpmSlider .ui-slider-range{
+	background: #CC0000;
+}
+
 .wrapper {
 	width: 640px;
 	margin: 0 auto;
