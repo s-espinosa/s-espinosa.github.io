@@ -2,6 +2,11 @@
 	border: black solid 1px;
 }*/
 
+.wrapper {
+	width: 640px;
+	margin: 0 auto;
+}
+
 .pads, #start, #stop, #kick, #snare, #hatClosed, #hatOpen {
 	height: 60px;
 	width: 60px;
