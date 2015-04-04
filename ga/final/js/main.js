@@ -1,5 +1,3 @@
-// fix everything
-
 // someday/maybe refactor so that each sound is it's own object with on/off colors, patterns... anything else?
 
 
@@ -8,6 +6,7 @@
 // setup
 var onOff = "off";
 var toClearOnOff = 0;
+var currentBeat = 0; //out of number of pads
 var padsArray = document.getElementsByClassName("pads");
 var soundsArray = document.getElementsByClassName("sounds");
 
@@ -61,7 +60,8 @@ document.getElementById("start").onclick = function() {
 	} else {
 		onOff = "on";
 		blinkOn();
-		toClearOnOff = setInterval(function(){blinkOn();}, msp16th*padsArray.length);
+		// toClearOnOff = setInterval(function(){blinkOn();}, msp16th*padsArray.length);
+		toClearOnOff = setInterval(function(){blinkOn();}, msp16th);		
 	}
 }
 
@@ -73,6 +73,8 @@ document.getElementById("stop").onclick = function() {
 		return;
 	} else {
 		onOff = "off";
+		currentBeat = 0;
+		changePads(activeSound);
 		clearInterval(toClearOnOff);
 	}
 }
@@ -88,24 +90,40 @@ function blinkOn() {
 	if (onOff === "off") {
 		return;
 	} else {
-		for (i=0; i<padsArray.length; i++) {
-			howToBlink(padsArray[i],i);
-			howToPlay(i, kickPattern, "kick");
-			howToPlay(i, snarePattern, "snare");
-			howToPlay(i, hatClosedPattern, "hatClosed");
-			howToPlay(i, hatOpenPattern, "hatOpen");			
+		// console.log(currentBeat + " of " + padsArray.length);
+		howToBlink(padsArray[currentBeat],currentBeat);
+		howToPlay(currentBeat, kickPattern, "kick");
+		howToPlay(currentBeat, snarePattern, "snare");
+		howToPlay(currentBeat, hatClosedPattern, "hatClosed");
+		howToPlay(currentBeat, hatOpenPattern, "hatOpen");
+
+		if (currentBeat === padsArray.length-1){
+			currentBeat = 0;
+		} else  {
+			currentBeat++;
 		}
 	}
 }
 
 // set delays for blinking behavior on each pad (repeating from the beginning is handled by setInterval in original call from onclick)
+var previousBeat = 31;
 function howToBlink(padElement, count) {
-	if (activeSoundPattern[padElement.getAttribute("padNumber")] === 0) {
-		setTimeout(function() {padElement.style.backgroundColor = padBackOffBlink;}, msp16th*(count));
-		setTimeout(function() {padElement.style.backgroundColor = padBackOff;}, msp16th*(count+1));
+	if (currentBeat === 0) {
+		previousBeat = 31;
 	} else {
-		setTimeout(function() {padElement.style.backgroundColor = padBackOnBlink;}, msp16th*(count));
-		setTimeout(function() {padElement.style.backgroundColor = padBackOn;}, msp16th*(count+1));		
+		previousBeat = currentBeat-1;
+	}
+
+	if (activeSoundPattern[currentBeat] === 0) {
+		padsArray[currentBeat].style.backgroundColor = padBackOffBlink;
+	} else {
+		padsArray[currentBeat].style.backgroundColor = padBackOnBlink;
+	}
+	
+	if (activeSoundPattern[previousBeat] === 0) {
+		padsArray[previousBeat].style.backgroundColor = padBackOff;
+	} else {
+		padsArray[previousBeat].style.backgroundColor = padBackOn;
 	}
 }
 
@@ -120,11 +138,14 @@ function howToBlink(padElement, count) {
 // play the sound if it's on, get out of the function if it's off
 function howToPlay(count, drumArray, drumSound) {
 	var soundPath = "audio/" + drumSound + ".wav"
+	// if (drumArray[count] === 1) {
+	// 	setTimeout(function() {
+	// 		this.snd = new Audio(soundPath);
+	// 		snd.play();
+	// 	}, msp16th*(count));
 	if (drumArray[count] === 1) {
-		setTimeout(function() {
-			this.snd = new Audio(soundPath);
-			snd.play();
-		}, msp16th*(count));
+		this.snd = new Audio(soundPath);
+		snd.play();
 	} else {
 		return;
 	}
@@ -202,30 +223,3 @@ function changePads(newPad) {
 
 	}
 }
-
-
-
-
-
-// testing stuff
-
-// console.log(padsArray.length);
-
-// distributeFrequency(msp16th);
-// // set pad attributes for how frequently to blink
-// function distributeFrequency (freq) {
-// 	for (i=0; i < padsArray.length; i++) {
-// 		padsArray[i].setAttribute("freqBlinkOn", i*4);
-// 		padsArray[i].setAttribute("freqBlinkOff", (i*4)+1);
-// 	}
-// }
-
-
-
-
-
-// // check setup
-// var printFrequency = document.getElementById("pad3").getAttribute("freqBlinkOff");
-// console.log(printFrequency);
-
-
