@@ -3,6 +3,12 @@
 
 //**INITIAL SETUP**//
 
+// load audio
+var kickSound = new Audio("audio/kick.wav");
+var snareSound = new Audio("audio/snare.wav");
+var hatClosedSound = new Audio("audio/hatClosed.wav");
+var hatOpenSound = new Audio("audio/hatOpen.wav");
+
 // setup
 var onOff = "off";
 var toClearOnOff = 0;
