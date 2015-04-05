@@ -252,6 +252,10 @@ function changeBPM() {
 	mspbeat = (60*1000)/bpm; //calculate milliseconds for each beat
 	msp16th = mspbeat/4; //calculate milliseconds for each sixteenth note
 
-	clearInterval(toClearOnOff);
-	toClearOnOff = setInterval(function(){blinkOn();}, msp16th);
+	if (onOff === "on") {
+		clearInterval(toClearOnOff);
+		toClearOnOff = setInterval(function(){blinkOn();}, msp16th);
+	} else {
+		return;
+	}
 }
