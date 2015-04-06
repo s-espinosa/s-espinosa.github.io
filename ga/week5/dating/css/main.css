@@ -1,7 +1,7 @@
 /** {
 	border: solid 1px black;
-}*/
-
+}
+*/
 
 
 /*basics*/
@@ -17,16 +17,39 @@
 .wrapperOuter {
 	width: 1080px;
 	margin: 0 auto;
+	padding: 0;
 	background-color: #CEE5F2;
 }
 
 .wrapperInner {
 	width: 720px;
 	float: left;
+
 /*	background-color: pink;*/
 }
 
+.column {
+	width: 350px;
+	float: left;
+	padding: 10px 10px 10px 0;
+}
 
+
+h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 36px;
+	margin-top: 10px;
+	padding-left: 10px;
+	color: white;
+}
+
+
+h2 {
+	font-family: 'Righteous', cursive;
+	font-size: 24px;
+	margin-top: 10px;
+	color: #73628A;
+}
 
 /*layout*/
 body {
@@ -35,7 +58,7 @@ body {
 }
 
 .left, .right {
-	width: 180px;
+	width: 165px;
 	float: left;
 }
 
@@ -52,13 +75,15 @@ header {
 	}
 
 main {
-	padding-top: 24px;
+	padding-top: 10px;
 	padding-bottom: 24px;
+	background-color: white;
+	padding-left: 10px;
 }
 
 aside {
-	padding-top: 24px;
-
+	padding: 10px 0 24px 0;
+	margin: 0;
 }
 
 footer {
@@ -75,6 +100,20 @@ footer {
 
 
 
+nav {
+	margin-right: 10px;
+}
+
+
+.left {
+	padding-left: 10px;
+}
+
+.right {
+	padding-right: 10px;
+	text-align: center;
+}
+
 /*images*/
 .pictures {
 	padding: 0;
@@ -82,7 +121,7 @@ footer {
 
 #main{
 /*	display: block;*/
-	height: ;
+	height: 470px;
 	width: 470px;
 /*	margin-right: 10px;*/
 	margin-left: 0;
@@ -91,9 +130,16 @@ footer {
 }
 
 img {
-	width: 112;
+	width: 110;
 	margin-left: 10px;
 	margin-right: 0;
+	margin-bottom: 10px;
 	padding: 0;
+	float: left;
+}
 
+.otherProfiles {
+	display: block;
+	margin: 0 auto 10px auto;
+	float: none;
 }
