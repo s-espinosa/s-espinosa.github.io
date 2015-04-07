@@ -109,6 +109,12 @@ nav {
 	padding-left: 10px;
 }
 
+.left a {
+	text-decoration: none;
+	display: block;
+	font-family: sans-serif;
+}
+
 .right {
 	padding-right: 10px;
 	text-align: center;
