@@ -14,27 +14,23 @@
 	height: 0;
 }
 
-.wrapperOuter {
-	width: 1080px;
-	margin: 0 auto;
+body {
+	background-color: #37123C;
+	color: #333355;
+	font-family: sans-serif;
+}
+
+img {
+	width: 110;
+	margin-left: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
 	padding: 0;
-	background-color: #CEE5F2;
-}
-
-.wrapperInner {
-	width: 720px;
 	float: left;
-
-/*	background-color: pink;*/
-}
-
-.column {
-	width: 350px;
-	float: left;
-	padding: 10px 10px 10px 0;
 }
 
 
+/*headers*/
 h1 {
 	font-family: 'Righteous', cursive;
 	font-size: 36px;
@@ -51,34 +47,60 @@ h2 {
 	color: #73628A;
 }
 
-/*layout*/
-body {
-	background-color: #37123C;
-	color: #333355;
+h3 {
+	font-weight: bold;
+	color: #3E7C8E;
+	margin-bottom: 2px;
 }
 
-.left, .right {
-	width: 165px;
+
+
+
+
+/*layout*/
+.wrapperOuter {
+	width: 1080px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #CEE5F2;
+}
+
+.wrapperInner {
+	width: 720px;
 	float: left;
 }
 
+
+/*header*/
 header {
 	background-color: #73628A;
 	height: 60px;
 }
 
-	#logo {
-		float: left;
-	}
-	nav {
-		float: right;
-	}
+#logo {
+	float: left;
+}
 
-main {
-	padding-top: 10px;
-	padding-bottom: 24px;
-	background-color: white;
+
+
+
+/*sidebars*/
+.left, .right {
+	width: 165px;
+	float: left;
+}
+
+.left {
 	padding-left: 10px;
+}
+
+.left p {
+	visibility: hidden;
+}
+
+.right {
+	padding-right: 10px;
+	text-align: center;
 }
 
 aside {
@@ -86,6 +108,57 @@ aside {
 	margin: 0;
 }
 
+nav {
+	float: left;
+	margin-right: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	font-family: sans-serif;
+	margin-top: 2px;
+}
+
+.otherProfiles {
+	display: block;
+	margin: 0 auto 10px auto;
+	float: none;
+}
+
+
+/*main*/
+main {
+	padding-top: 10px;
+	padding-bottom: 24px;
+	background-color: white;
+	padding-left: 10px;
+}
+
+.column {
+	width: 350px;
+	float: left;
+	padding: 10px 10px 10px 0;
+}
+
+.pictures {
+	padding: 0;
+}
+
+#main{
+	height: 470px;
+	width: 470px;
+	margin-left: 0;
+	float: left;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+}
+
+
+/*foot*/
 footer {
 	background-color: #437C90;
 	height: 120px;
@@ -100,52 +173,3 @@ footer {
 
 
 
-nav {
-	margin-right: 10px;
-}
-
-
-.left {
-	padding-left: 10px;
-}
-
-.left a {
-	text-decoration: none;
-	display: block;
-	font-family: sans-serif;
-}
-
-.right {
-	padding-right: 10px;
-	text-align: center;
-}
-
-/*images*/
-.pictures {
-	padding: 0;
-}
-
-#main{
-/*	display: block;*/
-	height: 470px;
-	width: 470px;
-/*	margin-right: 10px;*/
-	margin-left: 0;
-	float: left;
-	padding: 0;
-}
-
-img {
-	width: 110;
-	margin-left: 10px;
-	margin-right: 0;
-	margin-bottom: 10px;
-	padding: 0;
-	float: left;
-}
-
-.otherProfiles {
-	display: block;
-	margin: 0 auto 10px auto;
-	float: none;
-}
