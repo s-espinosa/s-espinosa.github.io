@@ -101,6 +101,20 @@ header {
 .right {
 	padding-right: 10px;
 	text-align: center;
+	color: white;
+}
+
+.right span {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
+
+.right p {
+	color: white;
+	font-family: 'Righteous', cursive;
+
 }
 
 aside {
@@ -120,12 +134,39 @@ nav a {
 	margin-top: 2px;
 }
 
+.imgWrap {
+	height: 110px;
+	width: 110px;
+	position: relative;
+}
+
 .otherProfiles {
 	display: block;
 	margin: 0 auto 10px auto;
 	float: none;
 }
 
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  color: green;
+  font-size: 36px;
+
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
 
 /*main*/
 main {
@@ -161,8 +202,9 @@ table {
 /*foot*/
 footer {
 	background-color: #437C90;
-	height: 120px;
+	height: 24px;
 	padding-top: 24px;
+	font-size: 10px;
 }
 
 .footCenter {
@@ -170,6 +212,3 @@ footer {
 	margin: 0 auto;
 	background: #437C90;
 }
-
-
-
