@@ -90,8 +90,8 @@ header {
 	float: left;
 }
 
-.left {
-	padding-left: 10px;
+aside.left {
+background-color: #3E7C8E;
 }
 
 .left p {
@@ -117,6 +117,11 @@ header {
 
 }
 
+.right .bottom {
+margin-top: 36px;
+	margin-left: 20px;
+}
+
 aside {
 	padding: 10px 0 24px 0;
 	margin: 0;
@@ -124,20 +129,20 @@ aside {
 
 nav {
 	float: left;
-	margin-right: 10px;
+/*	margin-right: 10px;*/
+	margin-left: 0;
+	width: 100%;
 }
 
 nav a {
 	text-decoration: none;
 	display: block;
 	font-family: sans-serif;
-	margin-top: 2px;
-}
-
-.imgWrap {
-	height: 110px;
-	width: 110px;
-	position: relative;
+/*	margin-top: 2px;*/
+	padding: 4px 0 2px 10px;
+	background: #3E7C8E;
+	color: white;
+	width: 100%;
 }
 
 .otherProfiles {
@@ -146,6 +151,12 @@ nav a {
 	float: none;
 }
 
+.imgWrap {
+	height: 110px;
+	width: 110px;
+	position: relative;
+	margin: 0 auto 10px auto;
+}
 
 .imgDescription {
   position: absolute;
@@ -154,7 +165,6 @@ nav a {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.5);
-  color: green;
   font-size: 36px;
 
 
