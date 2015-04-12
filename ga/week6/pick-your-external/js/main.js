@@ -7,11 +7,11 @@ $(document).ready(function(){
 		if ($(".ipsum").css("display") === "none") {
 			console.log("recognizes none")
 			changeIpsum(clicked);
-			generateIpsum();
+			setTimeout(function(){generateIpsum();}, 500);
 		} else {
 			closeIpsum();
 			changeIpsum(clicked);
-			setTimeout(function(){generateIpsum();}, 5000);
+			setTimeout(function(){generateIpsum();}, 500);
 		}
 	
 	});
