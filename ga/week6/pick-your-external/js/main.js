@@ -1,22 +1,4 @@
 $(document).ready(function(){
-	function AJAX_JSON_Req( url ) {
-	    var AJAX_req = new XMLHttpRequest();
-	    AJAX_req.open( "GET", url, true );
-	    AJAX_req.setRequestHeader("Content-type", "application/json");
-	 
-	    AJAX_req.onreadystatechange = function()
-	    {
-	        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
-	        {
-	            var response = JSON.parse( AJAX_req.responseText );
-	            return response;
-	        }
-	    }
-	    AJAX_req.send();
-	}
-
-	var ipsum = AJAX_JSON_Req( 'data/ipsum.json' );
-
 	$("#submit").click(function(){generateIpsum()});
 	$("#paragraphs").focus(function(){closeIpsum()});
 	$("nav a").click(function(){
@@ -59,6 +41,22 @@ $(document).ready(function(){
 		$("#activeLorem").attr("id", "");
 		$(clickedClass).attr("id", "activeLorem");
 
-		$(".ipsum").html(ipsum[clicked]);
+		AJAX_JSON_Req('data/ipsum.json', clicked);
+	}
+
+	function AJAX_JSON_Req(url, clickedRequest) {
+	    var AJAX_req = new XMLHttpRequest();
+	    AJAX_req.open( "GET", url, true );
+	    AJAX_req.setRequestHeader("Content-type", "application/json");
+	 
+	    AJAX_req.onreadystatechange = function()
+	    {
+	        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
+	        {
+	            var response = JSON.parse( AJAX_req.responseText );
+				$(".ipsum").html(response[clickedRequest]);
+	        }
+	    }
+	    AJAX_req.send();
 	}
 });
