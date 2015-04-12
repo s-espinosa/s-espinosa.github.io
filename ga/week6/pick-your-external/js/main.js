@@ -5,6 +5,7 @@ $(document).ready(function(){
 		var clicked = $(this).attr("class");
 
 		if ($(".ipsum").css("display") === "none") {
+			console.log("recognizes none")
 			changeIpsum(clicked);
 			generateIpsum();
 		} else {
