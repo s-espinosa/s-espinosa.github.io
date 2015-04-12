@@ -6,10 +6,10 @@ $(document).ready(function(){
 
 		if ($(".ipsum").css("display") === "none") {
 			console.log("recognizes none")
-			changeIpsum(clicked);
+			setTimeout(function(){changeIpsum(clicked);}, 500);
 		} else {
 			closeIpsum();
-			changeIpsum(clicked);
+			setTimeout(function(){changeIpsum(clicked);}, 500);
 		}
 	
 	});
