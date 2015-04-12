@@ -15,7 +15,7 @@ $(document).ready(function(){
 	    AJAX_req.send();
 	}
 
-	var ipsum = AJAX_JSON_Req( '../data/ipsum.json' );
+	var ipsum = AJAX_JSON_Req( 'data/ipsum.json' );
 
 	$("#submit").click(function(){generateIpsum()});
 	$("#paragraphs").focus(function(){closeIpsum()});
