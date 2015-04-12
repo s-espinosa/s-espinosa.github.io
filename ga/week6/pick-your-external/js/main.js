@@ -10,7 +10,7 @@ $(document).ready(function(){
 			generateIpsum();
 		} else {
 			closeIpsum();
-			setTimeout(function(){changeIpsum(clicked);}, 1);
+			changeIpsum(clicked);
 			setTimeout(function(){generateIpsum();}, 600);
 		}
 	
