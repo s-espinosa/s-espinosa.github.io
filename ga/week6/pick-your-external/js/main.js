@@ -11,7 +11,7 @@ $(document).ready(function(){
 		} else {
 			closeIpsum();
 			changeIpsum(clicked);
-			setTimeout(function(){generateIpsum();}, 600);
+			setTimeout(function(){generateIpsum();}, 5000);
 		}
 	
 	});
