@@ -9,7 +9,7 @@ $(document).ready(function(){
 	        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
 	        {
 	            var response = JSON.parse( AJAX_req.responseText );
-	            document.write( response.name );
+	            return response;
 	        }
 	    }
 	    AJAX_req.send();
