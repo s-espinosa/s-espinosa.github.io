@@ -7,11 +7,9 @@ $(document).ready(function(){
 		if ($(".ipsum").css("display") === "none") {
 			console.log("recognizes none")
 			changeIpsum(clicked);
-			setTimeout(function(){generateIpsum();}, 500);
 		} else {
 			closeIpsum();
 			changeIpsum(clicked);
-			setTimeout(function(){generateIpsum();}, 500);
 		}
 	
 	});
@@ -55,6 +53,7 @@ $(document).ready(function(){
 	        	console.log(clickedRequest);
 	            var response = JSON.parse( AJAX_req.responseText );
 				$(".ipsum").html(response[clickedRequest]);
+				generateIpsum();
 	        }
 	    }
 	    AJAX_req.send();
