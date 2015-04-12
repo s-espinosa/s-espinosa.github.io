@@ -5,7 +5,6 @@ $(document).ready(function(){
 		var clicked = $(this).attr("class");
 
 		if ($(".ipsum").css("display") === "none") {
-			console.log("recognizes none")
 			changeIpsum(clicked);
 		} else {
 			closeIpsum();
@@ -50,7 +49,6 @@ $(document).ready(function(){
 	    {
 	        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
 	        {
-	        	console.log(clickedRequest);
 	            var response = JSON.parse( AJAX_req.responseText );
 				$(".ipsum").html(response[clickedRequest]);
 				generateIpsum();
