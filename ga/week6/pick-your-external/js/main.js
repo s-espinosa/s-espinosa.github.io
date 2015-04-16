@@ -34,26 +34,13 @@ $(document).ready(function(){
 	function changeIpsum(clicked){
 		var clickedClass = "." + clicked
 
-		$("#activeLorem").attr("id", "");
+		$("#activeLorem").removeAttr("id");
 		$(clickedClass).attr("id", "activeLorem");
 
-		AJAX_JSON_Req('data/ipsum.json', clicked);
-	}
+		$.getJSON('data/ipsum.json', function(data) {
+			$(".ipsum").html(data[clicked]);
+			generateIpsum();
+		});
 
-	function AJAX_JSON_Req(url, clickedRequest) {
-	    var AJAX_req = new XMLHttpRequest();
-	    AJAX_req.open( "GET", url, true );
-	    AJAX_req.setRequestHeader("Content-type", "application/json");
-	 
-	    AJAX_req.onreadystatechange = function()
-	    {
-	        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
-	        {
-	            var response = JSON.parse( AJAX_req.responseText );
-				$(".ipsum").html(response[clickedRequest]);
-				generateIpsum();
-	        }
-	    }
-	    AJAX_req.send();
 	}
 });
