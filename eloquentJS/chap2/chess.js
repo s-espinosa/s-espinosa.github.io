@@ -1,34 +1,27 @@
-var dimensions = 20;
-var dimensionsPlus = dimensions + 1;
-// var dimensionsSquared = dimensions * dimensions;
-
+var dimensions = 19;
 var stringLine = "";
 var characterToAdd = " ";
 
-if (dimensions%2 === 0) {
-	for (var i=0; i<dimensions*dimensions; i++) {
-		if (i%dimensions === 0) {
-			stringLine = stringLine + characterToAdd + "\n";
-		} else if (characterToAdd === "#") {
-			stringLine = stringLine + "#";
-			characterToAdd = " ";
-		} else {
-			stringLine = stringLine + " ";
-			characterToAdd = "#";
-		}			
+
+for (var singleLine = 0; singleLine < dimensions; singleLine++) {
+	if (singleLine%2 === 0) {
+		characterToAdd = " ";
+	} else {
+		characterToAdd = "#";
 	}
-} else {
-	for (var i=0; i<dimensions*dimensionsPlus; i++) {
-		if (i%dimensionsPlus === 0) {
-			stringLine = stringLine + "\n";
-		} else if (characterToAdd === "#") {
-			stringLine = stringLine + "#";
-			characterToAdd = " ";			
-		} else {
-			stringLine = stringLine + " ";
+
+	for (var singleCharacter = 0; singleCharacter < dimensions; singleCharacter++) {
+		if (characterToAdd === " ") {
+			stringLine = stringLine + characterToAdd;
 			characterToAdd = "#";
-		}			
-	}	
+		} else {
+			stringLine = stringLine + characterToAdd;
+			characterToAdd = " ";			
+		}
+	}
+
+	stringLine = stringLine + "\n";
 }
+
 
 console.log(stringLine);
