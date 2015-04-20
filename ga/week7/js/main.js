@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-	if($(window).width() > 550) {
+	if($(window).width() > 600) {
 		$("#innerNav").show();
 	} else {
 		$("#innerNav").hide();
