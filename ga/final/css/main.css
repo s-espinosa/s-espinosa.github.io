@@ -1,65 +1,44 @@
-/** {
-	border: black solid 1px;
-}*/
-
-#bpmSlider {
-	float: left;
-	width: 458px;
-	margin: 32px 0 0 10px;
+body {
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
 }
 
-#bpmSlider .ui-slider-range{
-	background: #CC0000;
-}
-
-.wrapper {
-	width: 640px;
-	margin: 0 auto;
-}
-
-.pads, #start, #stop, #kick, #snare, #hatClosed, #hatOpen {
-	height: 60px;
-	width: 60px;
-	float: left;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-.pads {
-	background-color: #A4A6A5;
+header {
 
 }
 
-#start {
-	background-color: #006600;
+h1 {
+	background-color: #D5573B;
+	color: white;
+	line-height: 1.5;
+	text-align: center;
+	font-size: 3em;
 }
 
-#stop {
-	background-color: #CC0000;
-}
-
-#kick {
-	background-color: purple;
-}
-
-#snare {
-	background-color: orange;
-}
-
-#hatClosed {
-	background-color: teal;
-}
-
-#hatOpen {
-	background-color: navy;
-}
-
-
-.clearfix:after {
-	visibility: hidden;
+nav {
+	margin: 0;
+	padding: 0;
+	background-color: #444444;
+	font-size: 3em;
+	color: white;
+	line-height: 1.5;
 	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+#innerNav {
+	background-color: #64A6BD;
+	display: none;
+}
+
+#innerNav a {
+	display: block;
+	color: white;
+	border-bottom: 2px solid white;
 }
