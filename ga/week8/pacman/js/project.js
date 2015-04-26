@@ -30,11 +30,15 @@ $(document).ready(function(){
 				left: "45%"
 			}, 2000).animate({
 				left: "110%"
-			}, 2000, $("#pacman").css("left", "-100px"));
+			}, 2000, function(){
+				$("#pacman").css("left", "-110px");
+			});
 
 			$("#ghost1, #ghost2, #ghost3, #ghost4").animate({
 				left: "110%"
-			}, 2000);
+			}, 2000, function() {
+				$(".ghosts").css("left", "-110px");				
+			});
 
 
 		}
