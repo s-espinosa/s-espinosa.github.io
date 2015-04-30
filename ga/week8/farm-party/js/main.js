@@ -8,33 +8,45 @@ $(document).ready(function(){
 
 	var FarmAnimation = "on";
 
+	var someAnimals = $.merge($(".cows"), $(".roosters"));
+	var allAnimals = $.merge(someAnimals, $(".chicken"));
+
 	function animateAnimals(callback) {
 
 		if (FarmAnimation === "on") {
 
-			$.each ($(".cows"), function(index, value) {
+			$.each (allAnimals, function(index, value) {
 
-				newCowX = Math.round(Math.random()*(360-20))+20;
-				newCowY = Math.round(Math.random()*(60+60))-60;
+				if ($(value).hasClass("cows")) {
 
-				$(value).animate({
-					left: newCowX,
-					top: newCowY
-				}, 8000);
+					newCowX = Math.round(Math.random()*(360-20))+20;
+					newCowY = Math.round(Math.random()*(60+60))-60;
+
+					$(value).animate({
+						left: newCowX,
+						top: newCowY
+					}, 8000);
+				} else if ($(value).hasClass("roosters")) {
+
+					newChickenX = Math.round(Math.random()*(900-600))+600;
+					newChickenY = Math.round(Math.random()*(300-160))+160;
+
+					$(value).animate({
+						left: newChickenX,
+						top: newChickenY
+					}, 2000);
+				} else {
+					newChickenX = Math.round(Math.random()*(900-600))+600;
+					newChickenY = Math.round(Math.random()*(300-160))+160;
+
+					$(value).animate({
+						left: newChickenX,
+						top: newChickenY
+					}, 2000, function() {
+						callback(animateAnimals);
+					});
+				}
 			});
-
-			$.each ($(".chickens"), function(index, value) {
-
-				newChickenX = Math.round(Math.random()*(900-600))+600;
-				newChickenY = Math.round(Math.random()*(300-160))+160;
-
-				$(value).animate({
-					left: newChickenX,
-					top: newChickenY
-				}, 4000);
-			});
-
-			callback(animateAnimals);
 		} else {
 			return;
 		}
