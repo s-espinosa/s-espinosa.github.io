@@ -6,33 +6,49 @@ $(document).ready(function(){
 	var newChickenX = 0;
 	var newChickenY = 0;
 
+	var FarmAnimation = "on";
+
 	function animateAnimals(callback) {
 
-		$.each ($(".cows"), function(index, value) {
+		if (FarmAnimation === "on") {
 
-			newCowX = Math.round(Math.random()*(360-20))+20;
-			newCowY = Math.round(Math.random()*(60+60))-60;
+			$.each ($(".cows"), function(index, value) {
 
-			$(value).animate({
-				left: newCowX,
-				top: newCowY
-			}, 8000);
-		});
+				newCowX = Math.round(Math.random()*(360-20))+20;
+				newCowY = Math.round(Math.random()*(60+60))-60;
 
-		$.each ($(".chickens"), function(index, value) {
+				$(value).animate({
+					left: newCowX,
+					top: newCowY
+				}, 8000);
+			});
 
-			newChickenX = Math.round(Math.random()*(900-600))+600;
-			newChickenY = Math.round(Math.random()*(300-160))+160;
+			$.each ($(".chickens"), function(index, value) {
 
-			$(value).animate({
-				left: newChickenX,
-				top: newChickenY
-			}, 4000);
-		});
+				newChickenX = Math.round(Math.random()*(900-600))+600;
+				newChickenY = Math.round(Math.random()*(300-160))+160;
 
-		callback(animateAnimals);
+				$(value).animate({
+					left: newChickenX,
+					top: newChickenY
+				}, 4000);
+			});
+
+			callback(animateAnimals);
+		} else {
+			return;
+		}
 
 	}
+
+	$("h1").click(function() {
+		if (FarmAnimation === "on") {
+			FarmAnimation = "off";
+		} else {
+			FarmAnimation = "on";
+			animateAnimals(animateAnimals);
+		}
+	});
 
 animateAnimals(animateAnimals);
 
