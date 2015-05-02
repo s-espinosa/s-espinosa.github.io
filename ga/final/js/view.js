@@ -2,20 +2,22 @@ $(document).ready(function(){
 
 	var currentArticle = "home";
 	var posts = {};
-	var tags = {}
+	var tags = {};
 
-	console.log("it's happening");
-
-	$.getJSON('data/posts.json', function(data) {
+	$.getJSON("data/posts.json", function(data) {
 		posts = data;
 		console.log("did this")
 	});
 
+	console.log(posts);
+
 	$.each(posts, function(index, value) {
-		tags.push(value["tag"]);
+		tags.push(value[tag]);
 		console.log(tags);
 		console.log("I'm here");
 	});
+
+	console.log(tags);
 
 	$("#dropdown").click(function(){
 		$("#innerNav").slideToggle("slow");
