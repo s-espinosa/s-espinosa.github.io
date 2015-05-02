@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var tags = {};
 
 	$.getJSON("data/posts.json", function(data) {
-		posts = data;
+		posts.extend(data);
 		console.log("did this")
 	});
 
