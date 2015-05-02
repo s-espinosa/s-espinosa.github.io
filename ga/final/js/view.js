@@ -4,6 +4,8 @@ $(document).ready(function(){
 	var posts = {};
 	var tags = {}
 
+	console.log("it's happening");
+
 	$.getJSON('data/posts.json', function(data) {
 		posts = data;
 		console.log("did this")
