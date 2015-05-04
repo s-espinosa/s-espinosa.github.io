@@ -1,19 +1,14 @@
 $(document).ready(function(){
-	//Pull data for page has callback to pull JSON template
-	//pull template has callback to create page
 
-	//pullPageData("detail", "webdetail", 0);
 
 
 	function pullSingletPageData(pageType, pageLocation, pageToPull) {
 		//pageType is either singlet or grid
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
 
-
 		var JSONLocation = "data/" + pageLocation + ".json";
 
 		$.getJSON(JSONLocation, function(data) {
-			console.log(data);
 			var pageData = data[pageToPull];
 			pullSingletTemplate(pageData);
 		});		
@@ -22,17 +17,17 @@ $(document).ready(function(){
 
 	function pullSingletTemplate(pageData){
 		$.getJSON("data/detailtemplate.json", function(data) {
-			console.log(data);
 			createSingletPage(pageData, data);
 		});	
 	}
 
 	function createSingletPage(pageData, templateData) {
-		var HTMLtoInsert = templateData[0] + pageData.image + SingletTemplate[1] + pageDAta.link + SingletTemplate[2] + pageData.title + SingletTemplate[3] + pageData.assignment + SingletTemplate[4];
+		var HTMLtoInsert = templateData[0] + pageData.image + templateData[1] + pageData.link + templateData[2] + pageData.title + templateData[3] + pageData.assignment + templateData[4];
 		$("#mainWrapper").html(HTMLtoInsert);		
 	}
 
-	pullSingletPageData("singlet", "webdetail", 0);
+
+	pullSingletPageData("singlet", "webdetail", 2);
 
 
 
