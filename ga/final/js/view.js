@@ -1,39 +1,66 @@
 $(document).ready(function(){
 
-	var currentArticle = "home";
-	var posts = {};
-	var tags = {};
 
-	$.getJSON("data/posts.json", function(data) {
-		posts.extend(data);
-		console.log("did this")
-	});
-
-	console.log(posts);
-
-	$.each(posts, function(index, value) {
-		tags.push(value[tag]);
-		console.log(tags);
-		console.log("I'm here");
-	});
-
-	console.log(tags);
-
+	// mobile nav //
 	$("#dropdown").click(function(){
 		$("#innerNav").slideToggle("slow");
 	});
 
-	$("nav a").click(function(){
+	$("nav a").click(subtleNav());
+
+	//get json content//
+	var currentArticle = "home";
+	var posts = [];
+	var tags = [];
+
+	$.getJSON("data/posts.json", function(data) {
+		posts = data;
+		getTags(posts);
+	});
+
+	function getAllTags(postArray) {
+		$.each(posts, function(index, value) {
+			tags.push(value["tag"]);
+			console.log(tags);
+		});
+	}
+
+
+	function subtleNav () {
 		var clicked = $(this).attr("class");
 
-		if ($("main").attr("currentArticle") === currentArticle) {
-			return;
+		pickPosts(clicked);
+
+		if (tags.length === 1) {
+			makeSinglet();
 		} else {
-			$("main").fadeOut("slow", changeArticle(clicked));
-			// closeIpsum();
-			// setTimeout(function(){changeIpsum(clicked);}, 500);
+			makeGrid();
 		}
-	});
+
+		// if ($("main").attr("currentArticle") === currentArticle) {
+		// 	return;
+		// } else {
+		// 	$("main").fadeOut("slow", changeArticle(clicked));
+		// 	// closeIpsum();
+		// 	// setTimeout(function(){changeIpsum(clicked);}, 500);
+		// }
+	}
+
+	function pickPosts(tagPassed) {
+		//function to select posts based on their tag
+		//generate activePosts
+	}
+
+	function makeSinglet() {
+		//function to make a layout with a single focus
+		//run after pickPosts so that activePosts is current
+	}
+
+	function makeGrid() {
+		//function to make a layout with multiple items
+		//run after pickPosts so that activePosts is current
+	}
+
 
 
 	// function closeArticle(){
