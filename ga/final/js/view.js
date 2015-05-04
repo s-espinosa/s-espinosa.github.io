@@ -1,77 +1,69 @@
 $(document).ready(function(){
 
 
-	// mobile nav //
-	$("#dropdown").click(function(){
-		$("#innerNav").slideToggle("slow");
+	//ASSIGN CLICKS TO NAV BUTTONS//
+	$("#webNav").click(function(){
+		makeGridPage("web");
 	});
 
-	$("nav a").click(subtleNav());
-
-	//get json content//
-	var currentArticle = "home";
-	var posts = [];
-	var tags = [];
-
-	$.getJSON("data/posts.json", function(data) {
-		posts = data;
-		getTags(posts);
+	$("#audioNav").click(function(){
+		makeGridPage("audio");
 	});
 
-	function getAllTags(postArray) {
-		$.each(posts, function(index, value) {
-			tags.push(value["tag"]);
-			console.log(tags);
-		});
-	}
+	$("#videoNav").click(function(){
+		makeSingletPage("video");
+	});	
 
 
-	function subtleNav () {
-		var clicked = $(this).attr("class");
 
-		pickPosts(clicked);
+	//ACTUAL FUNCTIONS FOR CLICKS//
+	var SingletTemplate = pullJSON("detailtemplate");
 
-		if (tags.length === 1) {
-			makeSinglet();
-		} else {
-			makeGrid();
-		}
+	function makeGridPage(pageToMake) {
+		var JSONGridArray = pullJSON(pageToMake);
 
-		// if ($("main").attr("currentArticle") === currentArticle) {
-		// 	return;
-		// } else {
-		// 	$("main").fadeOut("slow", changeArticle(clicked));
-		// 	// closeIpsum();
-		// 	// setTimeout(function(){changeIpsum(clicked);}, 500);
-		// }
-	}
-
-	function pickPosts(tagPassed) {
-		//function to select posts based on their tag
-		//generate activePosts
-	}
-
-	function makeSinglet() {
-		//function to make a layout with a single focus
-		//run after pickPosts so that activePosts is current
-	}
-
-	function makeGrid() {
 		//function to make a layout with multiple items
 		//run after pickPosts so that activePosts is current
 	}
 
 
+	function makeSingletPage(pageType, pageToMake) {
+		var JSONLocation = pageType + "detail"
+		var JSONSingletArray = pullJSON(JSONLocation);
+		var imageSource = "img/detail/" + pageType + "/" + pageType + pageToMake + "detail.gif";
+		var detailIndex = (pageToMake * 1) - 1;
 
-	// function closeArticle(){
-	// 	$("main").fadeOut("slow");
-	// 	// $(".ipsum").slideUp("slow");
-	// }
+
+		//all of this below just seems to be happening too fast. Try ot make it a callback to the JSON pull itself.//
+		//means that you'll need to push all the JSON at once (template and detail)//
+		var HTMLtoInsert = SingletTemplate[0] + imageSource + SingletTemplate[1] + JSONSingletArray[detailIndex].link + SingletTemplate[2] + JSONSingletArray[detailIndex].title + SingletTemplate[3] + JSONSingletArray[detailIndex].assignment + SingletTemplate[4];
+		$("#mainWrapper").html(HTMLtoInsert);
+		//function to make a layout with a single focus
+		//run after pickPosts so that activePosts is current
+	}
 
 
+	function pullJSON(JSONPage) {
+		var JSONLocation = "data/" + JSONPage + ".json";
+
+		$.getJSON(JSONLocation, function(data) {
+			console.log(data);
+			return data;
+		});
+	}
+
+
+	makeSingletPage("web", "01");
+
+
+
+	//FUNCTIONS TO OPEN AND CLOSE WINDOWS (RENAME)//
 	function changeArticle(clicked){
 		var clickedClass = "." + clicked;
-
+		// function closeArticle(){
+		// 	$("main").fadeOut("slow");
+		// 	// $(".ipsum").slideUp("slow");
+		// }
 		
 
 
@@ -94,6 +86,17 @@ $(document).ready(function(){
 	}
 
 
-	generateArticle(currentArticle);
+	//INITIAL PAGE SETUP USING FUNCTIONS//
+	// generateArticle(currentArticle);
+
+
+
+	// // MOBILE NAVIGATION //
+	// $("#dropdown").click(function(){
+	// 	$("#innerNav").slideToggle("slow");
+	// });
+
+	// $("nav a").click(subtleNav());
+
 
 });
