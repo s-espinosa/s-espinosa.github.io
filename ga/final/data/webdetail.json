@@ -1,59 +1,69 @@
 [
 	{
+		"image": "img/detail/web/web01detail.gif"
 		"link": "../week1/about.html",
 		"title": "R&eacutesum&eacute",
 		"assignment": "<p>Create your own personal website. Create an about me page and style it with CSS. Add a resume page and link the two together.</p><p>Style the page however you want. We took at look at color (i.e. red, #ff0000, rgb(255, 0,0)), background-color, font-weight (bold, normal), font-family (i.e. Arial, \"Times New Roman\"), font-style (normal, italic), text-decoration (underline, none), text-align (center, left, right).</p>"
 	},
 
 	{
+		"image": "img/detail/web/web02detail.gif"
 		"link": "../week2/fashion-blog-part2/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web03detail.gif"
 		"link": "../week3/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web04detail.gif"
 		"link": "../week4/v2/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web05detail.gif"
 		"link": "../week5/dating/index.html",
 		"title": "",
 		"assignment": ""
 	},	
 
 	{
+		"image": "img/detail/web/web06detail.gif"
 		"link": "../week5/addingbox/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web07detail.gif"
 		"link": "../week6/pick-your-external/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web08detail.gif"
 		"link": "../week6/challenge/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web09detail.gif"
 		"link": "../week7/index.html",
 		"title": "",
 		"assignment": ""
 	},
 
 	{
+		"image": "img/detail/web/web10detail.gif"
 		"link": "../week8/farm-party/index.html",
 		"title": "",
 		"assignment": ""
