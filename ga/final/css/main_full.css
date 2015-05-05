@@ -11,6 +11,10 @@ body {
 	margin: 0 auto;
 }
 
+#mainWrapper {
+	display: none;
+}
+
 .onethird {
 	width: 33.33%;
 	float: left;
@@ -36,6 +40,13 @@ p {
 	line-height: 1.25;
 	margin-bottom: 1em;
 	font-family: serif;
+}
+
+ul li {
+	font-family: serif;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 1em;
 }
 
 .twothirds {

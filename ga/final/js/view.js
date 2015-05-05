@@ -2,8 +2,8 @@ $(document).ready(function(){
 
 
 
-	function pullSingletPageData(pageType, pageLocation, pageToPull) {
-		//pageType is either singlet or grid
+	//CREATE SINGLET PAGES: Pages showing the detail of a single project.//
+	function pullSingletPageData(pageLocation, pageToPull) {
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
 
 		var JSONLocation = "data/" + pageLocation + ".json";
@@ -14,7 +14,6 @@ $(document).ready(function(){
 		});		
 	} 
 
-
 	function pullSingletTemplate(pageData){
 		$.getJSON("data/detailtemplate.json", function(data) {
 			createSingletPage(pageData, data);
@@ -22,12 +21,13 @@ $(document).ready(function(){
 	}
 
 	function createSingletPage(pageData, templateData) {
-		var HTMLtoInsert = templateData[0] + pageData.image + templateData[1] + pageData.link + templateData[2] + pageData.title + templateData[3] + pageData.assignment + templateData[4];
-		$("#mainWrapper").html(HTMLtoInsert);		
+		var HTMLtoInsert = templateData[0] + pageData.image + templateData[1] + pageData.link + templateData[2] + pageData.title + templateData[3] + pageData.text + templateData[4];
+		$("#mainWrapper").html(HTMLtoInsert);
+		$("#mainWrapper").fadeIn("slow");
 	}
 
-
-	pullSingletPageData("singlet", "webdetail", 2);
+	//SINGLET TEST//
+	pullSingletPageData("audiodetail", 3);
 
 
 
