@@ -30,7 +30,28 @@ $(document).ready(function(){
 	pullSingletPageData("audiodetail", 3);
 
 
+	function pullGridPageData(pageLocation, tagsToPull) {
+		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
 
+		var JSONLocation = "data/" + pageLocation + ".json";
+
+		$.getJSON(JSONLocation, function(data) {
+			var pageData = data[pageToPull];
+			pullSingletTemplate(pageData);
+		});		
+	} 
+
+	function pullSingletTemplate(pageData){
+		$.getJSON("data/detailtemplate.json", function(data) {
+			createSingletPage(pageData, data);
+		});	
+	}
+
+	function createSingletPage(pageData, templateData) {
+		var HTMLtoInsert = templateData[0] + pageData.image + templateData[1] + pageData.link + templateData[2] + pageData.title + templateData[3] + pageData.text + templateData[4];
+		$("#mainWrapper").html(HTMLtoInsert);
+		$("#mainWrapper").fadeIn("slow");
+	}
 
 
 
