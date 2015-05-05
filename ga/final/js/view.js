@@ -27,34 +27,46 @@ $(document).ready(function(){
 	}
 
 	//SINGLET TEST//
-	pullSingletPageData("audiodetail", 3);
+	// pullSingletPageData("audiodetail", 3);
 
 
-	function pullGridPageData(pageLocation, tagsToPull) {
+	function pullGridPageData(pageLocation) {
+		//For now page location is either webgrid or audiogrid
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
 
 		var JSONLocation = "data/" + pageLocation + ".json";
 
 		$.getJSON(JSONLocation, function(data) {
 			var pageData = data[pageToPull];
-			pullSingletTemplate(pageData);
+			pullGridTemplate(pageData);
 		});		
 	} 
 
-	function pullSingletTemplate(pageData){
+	function pullGridTemplate(pageData){
 		$.getJSON("data/detailtemplate.json", function(data) {
-			createSingletPage(pageData, data);
+			createGridPage(pageData, data);
 		});	
 	}
 
-	function createSingletPage(pageData, templateData) {
-		var HTMLtoInsert = templateData[0] + pageData.image + templateData[1] + pageData.link + templateData[2] + pageData.title + templateData[3] + pageData.text + templateData[4];
+	function createGridPage(pageData, templateData) {
+		var HTMLtoInsert = "";
+
+		for (i = 0; i < pageData.length; i++) {
+			if (i % 3 === 0) {
+				HTMLtoInsert = HTMLtoInsert + "<div class=\"row\">" + templateData[0] + pageData[i].image + templateData[1] + pageData[i].rollover + templateData[2] + pageData[i].image + templateData[3];
+			} else if ((i+1) % 3 === 0) {
+				HTMLtoInsert = HTMLtoInsert + templateData[0] + pageData[i].image + templateData[1] + pageData[i].rollover + templateData[2] + pageData[i].image + templateData[3] + "</div>";
+			} else {
+				HTMLtoInsert = HTMLtoInsert + templateData[0] + pageData[i].image + templateData[1] + pageData[i].rollover + templateData[2] + pageData[i].image + templateData[3];
+			}
+		}
+
 		$("#mainWrapper").html(HTMLtoInsert);
 		$("#mainWrapper").fadeIn("slow");
 	}
 
-
-
+	//GRID TEST//
+	pullGridPageData("audiogrid");
 
 
 
