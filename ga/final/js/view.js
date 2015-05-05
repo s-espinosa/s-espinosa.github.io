@@ -89,7 +89,6 @@ $(document).ready(function(){
 
 
 
-
 	//ASSIGN CLICKS TO NAV BUTTONS//
 	$("#webNav").click(function(){
 		makeGridPage("web");
