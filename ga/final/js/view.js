@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 
 
+
+
 	//CREATE SINGLET PAGES: Pages showing the detail of a single project.//
 	function pullSingletPageData(pageLocation, pageToPull) {
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
@@ -30,20 +32,21 @@ $(document).ready(function(){
 	// pullSingletPageData("audiodetail", 3);
 
 
+
+	//CREATE GRID PAGES: Pages showing the a grid of a lot of projects.//
 	function pullGridPageData(pageLocation) {
 		//For now page location is either webgrid or audiogrid
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
-
 		var JSONLocation = "data/" + pageLocation + ".json";
 
 		$.getJSON(JSONLocation, function(data) {
-			var pageData = data[pageToPull];
+			var pageData = data;
 			pullGridTemplate(pageData);
 		});		
 	} 
 
 	function pullGridTemplate(pageData){
-		$.getJSON("data/detailtemplate.json", function(data) {
+		$.getJSON("data/gridtemplate.json", function(data) {
 			createGridPage(pageData, data);
 		});	
 	}
@@ -66,7 +69,7 @@ $(document).ready(function(){
 	}
 
 	//GRID TEST//
-	pullGridPageData("audiogrid");
+	pullGridPageData("webgrid");
 
 
 
