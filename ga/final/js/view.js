@@ -62,20 +62,20 @@ $(document).ready(function(){
 
 		$.getJSON(JSONLocation, function(data) {
 			var pageData = data;
-			pullGridTemplate(pageData);
+			pullGridTemplate(pageData, pageLocation);
 		});		
 	} 
 
-	function pullGridTemplate(pageData){
+	function pullGridTemplate(pageData, pageLocation){
 		$.getJSON("data/gridtemplate.json", function(data) {
-			createGridPage(pageData, data);
+			createGridPage(pageData, data, pageLocation);
 		});	
 	}
 
-	function createGridPage(pageData, templateData) {
+	function createGridPage(pageData, templateData, pageLocation) {
 		var HTMLtoInsert = "";
 
-		for (i = 0; i < pageData.length; i++) {
+		for (var i = 0; i < pageData.length; i++) {
 			if (i % 3 === 0) {
 				HTMLtoInsert = HTMLtoInsert + "<div class=\"row\">" + templateData[0] + pageData[i].image + templateData[1] + pageData[i].rollover + templateData[2] + pageData[i].image + templateData[3];
 			} else if ((i+1) % 3 === 0) {
@@ -86,7 +86,38 @@ $(document).ready(function(){
 		}
 
 		$("#mainWrapper").html(HTMLtoInsert);
+		assignButtonLinks(pageLocation);
 		$("#mainWrapper").fadeIn("slow");
+	}
+
+	function assignButtonLinks(pageLocation) {
+		console.log($(".gridLink")[1]);
+		pageLocation = pageLocation.slice(0,-4);
+		pageLocation = pageLocation + "detail";	
+
+			// var gridIndex = 0;
+
+		// for (var j=0; j < $(".gridLink").length; j++) {
+		// 	$(".gridLink")[j].click(function() {
+		// 		console.log(j + " " + pageLocation);				
+		// 		pullSingletPageData(pageLocation, j);
+		// 	});
+		// }
+
+		$(".gridLink").click(function(){
+				var gridIndex = $(this).index();
+				console.log($(this).index());
+
+			$("#mainWrapper").fadeOut("slow", function() {
+
+				pullSingletPageData(pageLocation, gridIndex);
+			});
+
+			// console.log($(this));
+
+		});
+
+	// pullSingletPageData("audiodetail", 3);
 	}
 
 	//GRID TEST//
