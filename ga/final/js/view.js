@@ -91,36 +91,28 @@ $(document).ready(function(){
 	}
 
 	function assignButtonLinks(pageLocation) {
-		console.log($(".gridLink")[1]);
 		pageLocation = pageLocation.slice(0,-4);
-		pageLocation = pageLocation + "detail";	
+		pageLocation = pageLocation + "detail";
 
-			// var gridIndex = 0;
-
-		// for (var j=0; j < $(".gridLink").length; j++) {
-		// 	$(".gridLink")[j].click(function() {
-		// 		console.log(j + " " + pageLocation);				
-		// 		pullSingletPageData(pageLocation, j);
-		// 	});
-		// }
+		for (var i=0; i <  $(".gridLink").length; i++) {
+			var currentGridLink = $(".gridLink")[i];
+			$(currentGridLink).attr("gridIndex", i);
+		}
 
 		$(".gridLink").click(function(){
-				var gridIndex = $(this).index();
-				console.log($(this).index());
+			var gridIndex = $(this).attr("gridIndex");
 
 			$("#mainWrapper").fadeOut("slow", function() {
-
 				pullSingletPageData(pageLocation, gridIndex);
 			});
-
-			// console.log($(this));
-
 		});
-
-	// pullSingletPageData("audiodetail", 3);
 	}
 
-	//GRID TEST//
+
+
+
+
+	//INITIAL SETUP//
 	pullGridPageData("webgrid");
 
 
