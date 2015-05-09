@@ -1,8 +1,5 @@
 $(document).ready(function(){
-
-
-
-	//ASSIGN CLICKS TO NAV BUTTONS//
+	//ASSIGN CLICK FUNCTIONS TO NAV BUTTONS//
 	$("#webNav").click(function(){
 		$("#mainWrapper").fadeOut("slow", function() {
 			pullGridPageData("webgrid")
@@ -16,29 +13,34 @@ $(document).ready(function(){
 	});
 
 	$("#videoNav").click(function(){
-		makeSingletPage("video");
+		$("#mainWrapper").fadeOut("slow", function() {
+			console.log("in here");
+			pullVideoPageData("videotemplate");
+		});
 	});	
 
 
 
 
-	//CREATE SINGLET PAGES: Pages showing the detail of a single project.//
+
+	//FUNCTIONS TO CREATE SINGLET PAGES: Pages showing the detail of a single project.//
 	function pullSingletPageData(pageLocation, pageToPull) {
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
-
 		var JSONLocation = "data/" + pageLocation + ".json";
 
 		$.getJSON(JSONLocation, function(data) {
 			var pageData = data[pageToPull];
 			pullSingletTemplate(pageData);
-		});		
+		});
 	} 
+
 
 	function pullSingletTemplate(pageData){
 		$.getJSON("data/detailtemplate.json", function(data) {
 			createSingletPage(pageData, data);
 		});	
 	}
+
 
 	function createSingletPage(pageData, templateData) {
 		var HTMLtoInsert = templateData[0] + pageData.image + templateData[1] + pageData.link + templateData[2] + pageData.title + templateData[3] + pageData.text + templateData[4];
@@ -54,7 +56,10 @@ $(document).ready(function(){
 
 
 
-	//CREATE GRID PAGES: Pages showing the a grid of a lot of projects.//
+
+
+
+	//FUNCTIONS TO CREATE GRID PAGES: Pages showing the a grid of a lot of projects.//
 	function pullGridPageData(pageLocation) {
 		//For now page location is either webgrid or audiogrid
 		//pageToPull will be pulled from the button id. Should be able to use the index of the links/divs/images in the main area
@@ -66,11 +71,18 @@ $(document).ready(function(){
 		});		
 	} 
 
+
+
+
 	function pullGridTemplate(pageData, pageLocation){
 		$.getJSON("data/gridtemplate.json", function(data) {
 			createGridPage(pageData, data, pageLocation);
 		});	
 	}
+
+
+
+
 
 	function createGridPage(pageData, templateData, pageLocation) {
 		var HTMLtoInsert = "";
@@ -90,6 +102,10 @@ $(document).ready(function(){
 		$("#mainWrapper").fadeIn("slow");
 	}
 
+
+
+
+
 	function assignButtonLinks(pageLocation) {
 		pageLocation = pageLocation.slice(0,-4);
 		pageLocation = pageLocation + "detail";
@@ -107,6 +123,39 @@ $(document).ready(function(){
 			});
 		});
 	}
+
+
+
+
+
+
+
+
+
+
+	//FUNCTIONS TO CREATE THE VIDEO PAGE: will only be used with the video template//
+	function pullVideoPageData(videoTemplateLocation) {
+		var JSONLocation = "data/" + videoTemplateLocation + ".json";
+		console.log(JSONLocation);
+
+		$.getJSON(JSONLocation, function(data) {
+			console.log("now I'm here");
+			var pageData = data;
+			console.log(pageData);
+			createVideoPage(pageData);
+		});
+	}
+
+	function createVideoPage(pageData) {
+		var HTMLtoInsert = pageData[0] + pageData[1];
+		console.log(HTMLtoInsert)
+		$("#mainWrapper").html(HTMLtoInsert);
+		$("#mainWrapper").fadeIn("slow");		
+	}
+
+
+
+
 
 
 
