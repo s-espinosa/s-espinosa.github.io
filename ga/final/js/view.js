@@ -14,8 +14,14 @@ $(document).ready(function(){
 
 	$("#videoNav").click(function(){
 		$("#mainWrapper").fadeOut("slow", function() {
-			console.log("in here");
-			pullVideoPageData("videotemplate");
+			pullVideoPageData("videotemplate", function(){});
+		});
+	});	
+
+	$("#padsNav").click(function(){
+		$("#mainWrapper").fadeOut("slow", function() {
+			pullVideoPageData("pads", padsSetUp);
+			console.log("I did it.");
 		});
 	});	
 
@@ -134,23 +140,22 @@ $(document).ready(function(){
 
 
 	//FUNCTIONS TO CREATE THE VIDEO PAGE: will only be used with the video template//
-	function pullVideoPageData(videoTemplateLocation) {
+	function pullVideoPageData(videoTemplateLocation, callback) {
 		var JSONLocation = "data/" + videoTemplateLocation + ".json";
 		console.log(JSONLocation);
 
 		$.getJSON(JSONLocation, function(data) {
-			console.log("now I'm here");
 			var pageData = data;
-			console.log(pageData);
-			createVideoPage(pageData);
+			createVideoPage(pageData, callback);
 		});
 	}
 
-	function createVideoPage(pageData) {
+	function createVideoPage(pageData, callback) {
 		var HTMLtoInsert = pageData[0] + pageData[1];
 		console.log(HTMLtoInsert)
 		$("#mainWrapper").html(HTMLtoInsert);
-		$("#mainWrapper").fadeIn("slow");		
+		$("#mainWrapper").fadeIn("slow");
+		callback();		
 	}
 
 
@@ -178,6 +183,11 @@ $(document).ready(function(){
 	// });
 
 	// $("nav a").click(subtleNav());
+
+
+
+
+	
 
 
 });
