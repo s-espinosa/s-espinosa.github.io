@@ -1,0 +1,13 @@
+{
+	"controls": "<div id=\"controls\" class=\"clearfix\"><div id=\"start\"></div><div id=\"stop\"></div><div id=\"bpmSlider\"></div></div><!-- controls -->",
+	"padDivOpen": "<div class=\"clearfix\">",
+	"padOpen": "<div id=\"pad",
+	"padClose": "\" class=\"pads\"></div>",
+	"padDivClose": "</div><!-- pads -->",
+	"soundDivOpen": "<div id=\"sounds\" class=\"clearfix\">",
+	"soundOpen": "<div id=\"",
+	"soundClose": "\" class=\"sounds\"></div>",
+	"soundDivClose": "</div><!-- sounds -->"
+}
+
+	
