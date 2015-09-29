@@ -41,8 +41,7 @@ describe Player do
 
   context "with a health greater than 100" do
     before do
-      @initial_health = 150
-      @player = Player.new("larry", @initial_health)
+      @player = Player.new("larry", 150)
     end
 
     it "is strong" do
@@ -52,8 +51,7 @@ describe Player do
 
   context "with a health less than or equal to 100" do
     before do
-      @initial_health = 100
-      @player = Player.new("larry", @initial_health)
+      @player = Player.new("larry", 100)
     end
 
     it "is not strong" do

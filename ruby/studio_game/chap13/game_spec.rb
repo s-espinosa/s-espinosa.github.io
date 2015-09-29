@@ -3,6 +3,8 @@ require_relative "game"
 describe Game do
 
   before do
+    $stdout = StringIO.new
+
     @title = "Knuckleheads"
     @game = Game.new(@title)
 
@@ -13,10 +15,28 @@ describe Game do
   end
 
   it "has a title" do
-    @new_game.title == @title
+    expect(@game.title).to eq(@title)
   end
 
-  it "has a "
+  it "w00ts the current player on a high die roll" do
+    allow_any_instance_of(Die).to receive(:roll).and_return(5)
+    @game.play
 
+    expect(@player.health).to eq(@initial_health + 15)
+  end
+
+  it "does nothing to the current player on a medium die roll" do
+    allow_any_instance_of(Die).to receive(:roll).and_return(3)
+    @game.play
+
+    expect(@player.health).to eq(@initial_health)
+  end
+
+  it "blams the current player on a low die roll" do
+    allow_any_instance_of(Die).to receive(:roll).and_return(1)
+    @game.play
+
+    expect(@player.health).to eq(@initial_health - 10)
+  end
 
 end
