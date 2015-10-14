@@ -52,14 +52,18 @@ nav a {
   color: #FFFFFF;
 }
 
-.box {
-  background-color: #000066;
+.boxes {
+
   height: 280px;
   width: 700px;
   position: absolute;
   left: 50%;
   margin-left: -350px;
   top: 90px;
-  opacity: 0.6;
   z-index: -1;
+}
+
+.box {
+  background-color: #000066;
+  opacity: 0.6;
 }
