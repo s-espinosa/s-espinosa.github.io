@@ -15,8 +15,8 @@ $(document).ready(function(){
 
         generateDimensions: function(){
 
-            this.actual_height = Math.round(Math.random() * this.passed_max_height);
-            this.actual_width = Math.round(Math.random() * this.passed_max_width);
+            this.actual_height = this.passed_max_height - 0.8 * (Math.round(Math.random() * this.passed_max_height));
+            this.actual_width = this.passed_max_width - 0.7 * (Math.round(Math.random() * this.passed_max_width));
 
             this.max_additional_y_shift = Math.round(Math.random()*(this.passed_max_height - this.actual_height));
             this.max_y_shift = this.passed_distance_from_top + this.max_additional_y_shift;
