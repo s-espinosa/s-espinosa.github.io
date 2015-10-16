@@ -45,26 +45,27 @@ $(document).ready(function(){
     }
 
 
-    var box1 = new Box(280, 700, 90, 1);
-    var box2 = new Box(280, 700, 90, 2);
-    var box3 = new Box(280, 700, 90, 3);
-    var box4 = new Box(280, 700, 90, 4);
-    var box5 = new Box(280, 700, 90, 5);
-    var box6 = new Box(280, 700, 90, 6);
-    var box7 = new Box(280, 700, 90, 7);
-    var box8 = new Box(280, 700, 90, 8);
-    var box9 = new Box(280, 700, 90, 9);
-    var box10 = new Box(280, 700, 90, 10);
+    var boxes = []
 
-    var boxes = [box1, box2, box3, box4, box5, box6, box7, box8, box9, box10];
 
-    //place each of the boxes on the site.
+    //Make 10 boxes and put them in the boxes array.
+    for (i=0; i<10; i++) {
+        temp_box = new Box (280, 700, 90, i);
+        boxes.push(temp_box);
+    }    
+
+
+
+
+    //Place each of the boxes on the site.
     for (i=0; i<boxes.length; i++) {
         boxes[i].generateDimensions();
         boxes[i].placeBox();
     }
 
 
+
+    //Function to animate the boxes. Feeding this function as a callback parameter makes them animate continuously.
     function animateBoxes(callback) {
         for (i=0; i<boxes.length; i++) {
             boxes[i].generateDimensions();
