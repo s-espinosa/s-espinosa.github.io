@@ -7,7 +7,7 @@ $(document).ready(function(){
         this.passed_max_width = passed_max_width;
         this.passed_distance_from_top = passed_distance_from_top;
         this.named_id = "box" + String(number_id);
-    };
+    }
 
 
     Box.prototype = {
@@ -42,15 +42,15 @@ $(document).ready(function(){
                 }
             }).appendTo("#boxes");
         }
-    }
+    };
 
 
-    var boxes = []
+    var boxes = [];
 
 
     //Make 10 boxes and put them in the boxes array.
     for (i=0; i<10; i++) {
-        temp_box = new Box (280, 700, 90, i);
+        var temp_box = new Box (280, 700, 90, i);
         boxes.push(temp_box);
     }    
 
