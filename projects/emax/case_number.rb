@@ -8,7 +8,7 @@ count_of_lines = 0
 
 File.open(file_to_check, "rt").each_line do |line|
     count_of_lines += 1
-    if /.*\d{3}-\d{7}.*/ =~ line
+    if /\d{3}-\d{7}/ =~ line
         temp_case = line.match(/\d{3}-\d{7}/).to_s
         temp_case = temp_case + "\n"
         output_text = output_text + temp_case
