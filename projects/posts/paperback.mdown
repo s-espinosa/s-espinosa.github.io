@@ -1,0 +1,180 @@
+## Background
+I'm going to try to keep from burying the lede here and just say that I think we can do a better job of creating instructions for board games. Currently the best way to get a group of people to play a game with even the tiniest bit of complexity is to learn from someone who learned from other people how to play and already has a few games under their belt. Second to that is to have someone in your group volunteer to take on the task of learning the game (as best they can) so that they can teach the group, with the occassional look back to the rules. This is a task that's difficult enough that there are [videos](http://www.shutupandsitdown.com/videos/v/rules-explanations/) dedicated to the topic of how to teach games, as well as [channels](https://www.youtube.com/user/WatchItPlayed) dedicated to teaching games so you don't have to.
+
+I guess the question that I'm asking is, what can game designers do to help make the process easier? At a high level, I think the best way to do this is to introduce complexity gradually to a group of gamers by allowing them to play their way into it. Together. As a group.
+
+The game that got me thinking about this is paperback, which is not by any stretch what most people would call a complex board game. It's a game that has a few different things going on, but it doesn't hold a match to most of the games out there. I had a few friends over not too long ago, and even though I knew that I should take the time to learn the game myself, I had a shiny new game and decided that I wanted to give it a go. One thing to note: the packaging on this game is beautiful. It's the kind of game that people are drawn to without quite knowing why. So much so that one of my buddies actually volunteered to learn the rules while the rest of us sat on the couch and watched [This is Not Happening](https://www.youtube.com/watch?v=jJAZKBG3aE8)videos.
+
+He got the game set up, said he thought he could get us through it, and we proceeded to play with just enough hints to let us know that we were doing something wrong. We got a couple rules wrong and managed to finish what's billed as a forty-five minute experience in somewhere between fifteen and twenty. Oh, and we ended up with a three way tie.
+
+So I developed some alternate instructions that I'm going to try next time we give the game a run. As described above, they introduce components gradually.
+
+##Unboxing
+Unwrap the cards in this box and split them into the following categories.
+
+1. *Starting Decks:* These include five sets of ten cards, each with an N, S, R, L, T, and five wild (?) cards.
+2. *Common Cards:* Labeled as such at the top of each card.
+3. *Letter Cards:* The colored cards with a letter on them with values in the lower left corner between two and ten cents. It will help move things along later if you split these now by the value in the lower left hand corner.
+4. *Fame Cards:* More wild cards marked with a ? in the upper left corner, but these look like book covers.
+5. *Miscellaneous:* Theme cards (marked as such top center), and Award and Power cards (marked in the lower left).
+
+For now, take out the Starting Decks, and give one set of ten to each of the players.
+
+Cards may be added and removed from these decks in future rounds, but each player will maintain their own deck. There will be no shared draw *or* discard deck. Once you discard all the cards in your deck, you will shuffle it to create a new draw deck.
+
+##Round 1: Everybody Spell a Word
+1. Have each player shuffle their deck, and set it down in front of them face down. This will be their draw deck.
+2. Have each player draw five cards from their deck.
+3. Pick a first player.
+4. Have the player spell a word with the cards in their hand. They don't have to use all the cards, but generally longer words are will lead to higher scores in the long run. For now, simply let the group know what your word is and then take all five cards you used and place them face up in front of you in a single pile. This will be your discard pile.
+4. Have the next player moving clockwise continue by repeating step three until all players have completed one round.
+
+End of Round: Each player has two stacks of five cards in front of them, a draw pile face up and a discard pile face down.
+
+##Round 2: Add a Common Card
+###Setup
+1. Pull out the Common Cards and shuffle them.
+2. Pull out the Common Card divider and put it on the table in a place where everyone can see it.
+3. Pick four Common Cards randomly and place them face up on the divider in such a way that only the line that says 7 Letters is showing. Stagger the four cards so that each time you remove a card from the top of the pile one additional line shows (i.e. when you remove one card the line that says 8 Letters will show, and when you remove two cards the line that says 9 Letters will show, etc.)
+4. Place the rest of the Common Cards to the side.
+
+###Turns
+1. Have each player pick up the remaining five cards in their draw pile.
+2. Have each player Continue taking turns as in Round 1, except now each player can use the Common Card that is showing to make their word. Now it will be possible to make six letter words, whereas before the maximum number of letters available to any one player at a time was five.
+3. As each player finishes their turn have them add the cards in their hand to their discard pile.
+4. At this point, each player will have moved completely through their deck. Have each player shuffle the cards in their discard deck to create a new draw deck.
+5. Draw five cards from the newly created draw deck.
+
+##Round 3: Buy Some Letters
+###Setup
+1. Lay out the Letter Cards in piles for 2, 3, 4, 5, 6, and 7 cents. Create one pile for Letter Cards with values of 8 through 10 cents.
+2. Shuffle each pile.
+3. Take a moment to review the Letter Cards.
+	Each card will have the following items on its face.
+	- *Cost:* the number in the lower left hand corner represents how much it will cost you to purchase the card.
+	- *Letter:* the letter in in the center and upper left of the card. If you purchase the card, you will be able to use this letter in future rounds to make words. Some cards will have two letters on them. When these are used in future rounds it is expected that the two letters will be used consecutively in the order that they're presented on the card (absent any special Ability that specifically states otherwise).
+	- *Score:* the number in the upper left hand corner represents the point value of the card when its played. Higher scores will allow you to purchase more valuable cards in future rounds.
+	Some cards will also include an *Ability*, which will activate when they are used in future rounds to form words.
+
+
+###Turns
+Have each player:
+1. Create a word as in rounds 1 and 2.
+2. Total the score values in the upper left corner of the Letter Cards that you used to create your word. Do not count the scores on Letter Cards that you did not use. This total represents the money you have available to you to buy cards from the Letter Card piles. For example, if your total was three, you can buy the 3 cent card. If your total was 2, you can buy the 2 cent card, etc. You can purchase as many cards as your word score allows. If you do not use the full value of your score, remaining points are lost in a use-it-or-lose-it fashion.
+3. Buy cards from the Letter Card piles and add them to your discard pile. These cards are now part of your deck and will be used in future rounds after you have shuffled your discards into a new draw pile.
+3. Discard the cards you used to make your word and all of the cards left in your hand.
+4. Draw five cards from your draw pile.
+
+
+##Round 4: Buy Some More Letters, Maybe Offer a Discount
+###Setup
+1. Take the top card from each of the Letter Card piles except for the 2 cent pile and make a single row below the piles.
+2. Place the wooden cubes on the table where everyone can reach them. These cubes will be used to mark cards that have been passed over and reduce their price.
+
+###Turns
+Have each player:
+1. Create a word.
+2. Score the word.
+3. Buy a card from either the Letter Card piles or the newly created row of Letter Cards. If you choose a card from the newly created row of Letter Cards, take the card from the top of the corresponding pile and replace the card you took. If you choose the card on top of the pile instead of the card in the newly created row, take one of the wooden cubes and place it on the card in the new row. From now on, anyone who wants to purchase that card can subtract the number of cubes on the card from the price listed on the card itself.
+4. Add any Letter Card that you purchased to your discard pile.
+5. Discard the cards you used to make your word and all of the cards left in your hand.
+6. Shuffle the cards in your discard pile to create a new draw pile and draw five cards.
+
+
+##Round 5: Profit and Get Famous!
+###Note
+Each player will now have more than 10 cards in their deck, and may potentially have a different number of cards in their deck from other players. These cards will include cards with special Abilities that may allow you to pick up more than five cards at the end of your turn. From now on, shuffle your discard pile any time you reach the end of your draw pile.
+
+
+###Setup
+1. Lay out the Fame Cards using the table on the Fame Card divider. At the end of this step there should be four more piles on the table: 5, 8, 11, and 17 cent piles of fame cards. The number of cards in each pile will vary based on the number of players.
+2. Review the Fame Cards.
+	Each Fame Card will have the following features.
+	- *Fame Points:* In the lower right hand corner you will find the Fame Points associated with each card. Ultimately, the Fame Points that each person holds at the end of the game will determine the winner. *Accumulating Fame Points is the goal of the game!* At this time, note that the Common Card you have been using also has Fame Points associated with it. Next round we'll see how to add Common Cards to your hand.
+	- *Cost:* the number in the lower left hand corner represents how much it will cost you to purchase the card.
+	- *Letter:* Each fame card will have a ? in the upper left corner indicated that these will be played as wild cards used to make a word.
+	- *Score:* For Fame Cards, as with the wild cards in your starting hand, the Score will be 0. These cards will not help you to buy additional cards in future rounds.
+
+
+###Turns
+1. Create a word.
+2. Score the word (including any additional points gained based on the abilities section of the cards you used).
+3. Buy a card from the Letter Card piles, the row of Letter Cards (as before), *or* the Fame Card piles, and add them to your discard pile.
+4. Resolve any Abilities
+	- *Score Abilities:* You will already have resolved these in step 2, so do nothing here.
+	- *Action Abilities:* If your Ability allows you to Trash a card (remove it completely from the game) in exchange for a Letter Card, or otherwise adjust the cards on the table, do that now. If any Ability instructs you to Trash the card, do that now as well.
+	- *Attack Abilities:* If any of your Abilities is labeled as an attack, this card will impact other players. Place the card in front of you and leave it there until your next turn, at which point you will add it to your discard pile.
+	- *Draw Abilities:* These cards allow you to draw extra cards at the end of this turn. For now, leave these cards in front of you next to the Attack Ability cards.
+5. Discard the cards you used to make your word and all of the cards left in your hand (not including Attack Ability or Draw Ability cards).
+6. Draw five cards from your draw pile (reshuffling your discard pile if necessary), and any cards your entitield to based on cards with Draw Abilities currently active.
+7. Discard any active Draw Ability cards.
+
+
+
+##Round 6: Maybe Take a Common Card?
+###Setup
+None! All the pieces for the base game are in play.
+
+
+###Note
+There are two additional steps this round for each turn:
+
+- *Discard any Active Attack Ability Cards:* This is just a cleanup step from the previous round for any Attack Ability cards played.
+- *Check the word length:* This gives you another way to add letters to your deck and to gain Fame Points. More detail below in the Turn description.
+
+
+
+###Turns
+1. Discard any active Attack Ability cards.
+2. Create a word.
+3. Check the word length. If the word includes more letters than the number of letters currently showing on above the Common Card, then you get to take that card and add it to your Deck. This reveals a new Common Card for everyone to use when building their words and increases the number of letters that will be required for any player to take that Common Card and add it to thier Deck.
+4. Score the word.
+5. Buy cards and add them to your discard pile.
+6. Resolve any abilities.
+7. Discard cards.
+8. Draw next hand.
+9. Discard any Draw Ability cards.
+
+
+
+##Rounds 7+: You Got This
+###Turns
+1. Discard any active Attack Ability cards.
+2. Create a word.
+3. Check the word length.
+4. Score the word.
+5. Buy cards and add them to your discard pile.
+6. Resolve any abilities.
+7. Discard cards.
+8. Draw next hand.
+9. Discard any Draw Ability cards.
+
+
+###Game End
+The game ends when either one of two things happens:
+
+1. All of the Common Cards are added to player Decks revealing the Game End line, or
+2. Only two piles of Fame Cards remain.
+
+The player who took the last Common Card or the Fame Card that leaves only to piles remaining finishes their turn and then all players score their Decks.
+
+
+###Scoring
+The player with the most Fame Points in their Deck (including their draw pile, hand, and discard pile) wins.
+In the case of a tie, the player with the most Common Cards wins. 
+
+
+
+NES style rules explanations.
+N64 style rules explanations.
+
+Paperback
+all accounts a wonderful game, for the life of me couldn't figure out how to play it on the fly.
+Not a good position to be in. Ever. Should know the rules. Should be able to explain them. should have played a few rounds before any of your friends shows up, but I had a shiny new game and I wanted to play it. And it generated enough interest from my friends that I figured we could give it a shot. Enough interest that one of my other friends actually volunteered to learn the rules while the rest of us watched This is Not Happening clips. So we gave it a go. Played a couple of rounds and got the rules just wrong enough to throw the game off in a way that we knew we had gotten the rules wrong.
+
+Ultimately this was helpful. We all had a chance to get a feel for the game (even though we didn't get it quite right), and I've now had a moment to watch a couple of videos and read the rules properly so that now I figure if we give it another go we can play a proper round.
+
+But it got me thinking. This is not the first time this has happened to us. We proceeded to play a round of Roll for it, which they had never played, and immediately understood. This turned into five rounds. Roll for It is a simple game, with probably a total of three rules, that offers little in the way of depth, but can still be fun for a few games. Paperback isn't really that much more complicated, but pulling the pieces out of the box and getting them organized makes it feel like there's a lot more going on. It got me thinking about complexity and how we teach board games. This likely has more general UX/learning applications, though I haven't quite thought of what those are at this point. What it made me think of was 
+
+Phil Fish got into trouble not too long ago for [this clip](https://www.youtube.com/watch?v=yKUGwlFJAHw "Modern Japanese Game Design"), which starts with a pretty simplistic take on modern Japanese video games, which is a shame because that drama overshadows some fairly thoughtful commentary from Jon Blow (and even Fish by the end of it) about game design and how to help teach players about what they're allowed to do in a game world. 
+
