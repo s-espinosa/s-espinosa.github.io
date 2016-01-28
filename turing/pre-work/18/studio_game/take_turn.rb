@@ -18,6 +18,5 @@ module GameTurn
     
     treasure = TreasureTrove.random
     player.found_treasure(treasure)
-
   end
 end

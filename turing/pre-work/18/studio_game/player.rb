@@ -1,3 +1,5 @@
+require_relative 'treasure_trove'
+
 class Player
   def initialize(name, health=100)
     @name = name.capitalize
@@ -38,6 +40,13 @@ class Player
     @found_treasures[treas.name] += treas.points
     puts "#{@name} found a #{treas.name} worth #{treas.points} points."
     puts "#{@name}'s treasures: #{@found_treasures}"
+  end
+
+  def each_found_treasure
+    @found_treasures.each do |name, points|
+      new_treasure = Treasure.new(name, points)
+      yield(new_treasure)
+    end
   end
 
   def points
