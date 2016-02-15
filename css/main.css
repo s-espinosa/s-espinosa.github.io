@@ -27,6 +27,12 @@ h2 {
 }
 
 p {
+  font-family: "futura-pt", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+a {
   color: #FFFFFF;
 }
 
