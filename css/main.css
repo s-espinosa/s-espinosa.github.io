@@ -68,6 +68,7 @@ p {
   padding-top: 10px;
   color: #553333;
 	font-size: 1.25em;
+	max-width: 640px;
 }
 
 a {
