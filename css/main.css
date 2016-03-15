@@ -1,3 +1,8 @@
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 h1 {
   font-family: serif;
   color: #992222;
@@ -10,11 +15,6 @@ h1 {
 h1 a {
   text-decoration: none;
   color: #992222;
-}
-
-.wrapper {
-	max-width: 960px;
-	margin: 0 auto;
 }
 
 nav {
@@ -45,16 +45,6 @@ main {
   padding-bottom: 20px;
 }
 
-main img {
-  width: 960px;
-  margin-left: -10px;
-}
-
-p {
-  padding-top: 10px;
-  color: #553333;
-}
-
 h2 {
 	color: #992222;
   line-height: 1.5;
@@ -67,4 +57,19 @@ h3 {
   line-height: 2;
   font-size: 1.5em;
   margin-bottom: -20px;
+}
+
+main img {
+  width: 960px;
+  margin-left: -10px;
+}
+
+p {
+  padding-top: 10px;
+  color: #553333;
+}
+
+a {
+  text-decoration: none;
+  color: #992222;  
 }
