@@ -67,9 +67,9 @@ main img {
 p {
   padding-top: 10px;
   color: #553333;
+	font-size: 1.2em;
 }
 
 a {
-  /*text-decoration: none;*/
-  color: #992222;  
+  color: #992222;
 }
