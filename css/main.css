@@ -49,7 +49,7 @@ h2 {
 	color: #992222;
   line-height: 1.5;
   font-size: 2em;
-  margin-bottom: -10px;
+  /*margin-bottom: -10px;*/
 }
 
 h3 {
@@ -68,7 +68,7 @@ p {
   padding-top: 10px;
   color: #553333;
 	font-size: 1.25em;
-	max-width: 640px;
+	line-height: 1.5;
 }
 
 a {
