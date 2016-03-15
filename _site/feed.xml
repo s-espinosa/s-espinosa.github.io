@@ -5,12 +5,12 @@
     <description></description>
     <link>http://s-espinosa.github.io/</link>
     <atom:link href="http://s-espinosa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Mar 2016 12:19:05 -0500</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2016 12:19:05 -0500</lastBuildDate>
+    <pubDate>Tue, 15 Mar 2016 12:28:59 -0500</pubDate>
+    <lastBuildDate>Tue, 15 Mar 2016 12:28:59 -0500</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
-        <title>Look at all those passing tests</title>
+        <title>Look at all those passing tests.</title>
         <description>&lt;p&gt;Turing’s &lt;a href=&quot;https://github.com/turingschool/curriculum/blob/master/source/projects/black_thursday.markdown&quot;&gt;Black Thursday&lt;/a&gt; project has been pretty much filling my days, so when a cohort member asked me what my approach to testing was I discovered that I had plenty to say. Right off the bat, I had to look up fixtures because I’m still not sure I’m using all the testing terminology correctly (&lt;a href=&quot;http://martinfowler.com/articles/mocksArentStubs.html&quot;&gt;stubs? fixtures? mocks? doubles?&lt;/a&gt;), but at a high level here’s what &lt;a href=&quot;https://github.com/kristindiannefoss&quot;&gt;Kris&lt;/a&gt; (my partner on this project) and I came up with.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-assignment&quot;&gt;The Assignment&lt;/h3&gt;
