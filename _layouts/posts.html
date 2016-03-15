@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main class="wrapper">
+      {% if page.image %}<img src="{{ site.url }}/image/{{ page.image }}">{% endif %}
+      <h2>{{ page.title }}</h2>
+
+      <ul>
+        {% for post in site.posts limit: 5 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+    </main>
+  </body>
+</html>

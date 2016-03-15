@@ -1,4 +1,4 @@
 ---
-layout:     default
+layout:     posts
 title:      "Posts"
 ---
