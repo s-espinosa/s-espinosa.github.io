@@ -1,6 +1,6 @@
 ---
 layout:     default
-title:      "Look at all those passing tests"
+title:      "Look at all those passing tests."
 date:       2016-03-15 11:01:46 -0500
 categories: testing
 image:      tests.jpg
