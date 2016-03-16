@@ -79,9 +79,10 @@ a {
 }
 
 .small-image {
-	width: 60px;
+	width: 90px;
 	display: block;
 	float: left;
 	margin-top: -10px;
 	margin-right: 20px;
+	margin-left: 10px;
 }
