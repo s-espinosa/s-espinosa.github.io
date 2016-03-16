@@ -45,9 +45,14 @@ nav a:hover {
   padding-bottom: 20px;
 }*/
 
-h2, h3, p, .higlight {
+h2, h3, p {
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.highlight {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 h2 {
