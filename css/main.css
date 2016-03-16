@@ -49,12 +49,14 @@ h2 {
 	color: #992222;
 	margin-top: 40px;
   font-size: 2em;
+	font-weight: bold;
 }
 
 h3 {
 	color: #553333;
 	margin-top: 35px;
   font-size: 1.5em;
+	font-style: italic;
 }
 
 main img {
