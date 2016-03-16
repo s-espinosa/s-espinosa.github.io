@@ -47,16 +47,14 @@ main {
 
 h2 {
 	color: #992222;
-  line-height: 1.5;
+  line-height: 3;
   font-size: 2em;
-  /*margin-bottom: -10px;*/
 }
 
 h3 {
 	color: #553333;
-  line-height: 2;
+  line-height: 3;
   font-size: 1.5em;
-  margin-bottom: -20px;
 }
 
 main img {
