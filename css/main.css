@@ -45,6 +45,10 @@ nav a:hover {
   padding-bottom: 20px;
 }*/
 
+h2, h3, p {
+	padding-left: 10px;
+}
+
 h2 {
 	color: #992222;
 	margin-top: 40px;
@@ -60,7 +64,6 @@ h3 {
 
 main img {
   width: 960px;
-  margin-left: -10px;
 }
 
 p {
