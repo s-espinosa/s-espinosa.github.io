@@ -77,3 +77,9 @@ p {
 a {
   color: #992222;
 }
+
+.small-image {
+	width: 320px;
+	display: block;
+	float: left;
+}
