@@ -79,9 +79,9 @@ a {
 }
 
 .small-image {
-	width: 320px;
+	width: 60px;
 	display: block;
 	float: left;
-	margin-top: 0px;
+	margin-top: -10px;
 	margin-right: 20px;
 }
