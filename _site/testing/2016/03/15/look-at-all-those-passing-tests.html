@@ -37,23 +37,25 @@
 
 <p>For our low level classes (merchant, item, etc.) we used a setup method to hold a hash contianing info we would expect from a single line of CSV.</p>
 
-<pre><code class="language-ruby">def setup
-  @invoice = Invoice.new({:id          =&gt; 6,
-                          :customer_id =&gt; 7,
-                          :merchant_id =&gt; 8,
-                          :status      =&gt; "pending",
-                          :created_at  =&gt; "2014-03-15",
-                          :updated_at  =&gt; "2014-03-15",
-  })
-end
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">setup</span>
+  <span class="vi">@invoice</span> <span class="o">=</span> <span class="no">Invoice</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span><span class="ss">:id</span>          <span class="o">=&gt;</span> <span class="mi">6</span><span class="p">,</span>
+                          <span class="ss">:customer_id</span> <span class="o">=&gt;</span> <span class="mi">7</span><span class="p">,</span>
+                          <span class="ss">:merchant_id</span> <span class="o">=&gt;</span> <span class="mi">8</span><span class="p">,</span>
+                          <span class="ss">:status</span>      <span class="o">=&gt;</span> <span class="s2">"pending"</span><span class="p">,</span>
+                          <span class="ss">:created_at</span>  <span class="o">=&gt;</span> <span class="s2">"2014-03-15"</span><span class="p">,</span>
+                          <span class="ss">:updated_at</span>  <span class="o">=&gt;</span> <span class="s2">"2014-03-15"</span><span class="p">,</span>
+  <span class="p">})</span>
+<span class="k">end</span>
 </code></pre>
+</div>
 
 <p>The main benefit of this approach is that it’s pretty easy to look to the top of the test and see what exactly we expect to be in a given Invoice instance: if the id is 6 in the hash, then the test pretty much writes itself.</p>
 
-<pre><code class="language-ruby">def test_it_has_an_id
-  assert_equal 6, @invoice.id
-end
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_it_has_an_id</span>
+  <span class="n">assert_equal</span> <span class="mi">6</span><span class="p">,</span> <span class="vi">@invoice</span><span class="p">.</span><span class="nf">id</span>
+<span class="k">end</span>
 </code></pre>
+</div>
 
 <p>We used examples from the spec when available. More info <a href="http://chriskottom.com/blog/2014/10/4-fantastic-ways-to-set-up-state-in-minitest/">here</a> on how to create a setup method that will run prior to your tests, though in retrospect I realize that this runs before <em>each</em> test. I’d rather have it run once before all the tests.</p>
 
@@ -61,32 +63,33 @@ end
 
 <p>For our repos, we took more or less the same approach, but in the setup method we’ve been creating a few instances of the thing the repo is supposed to hold (some items, merchants, or whatever), and then feeding those into the repo using new.</p>
 
-<pre><code class="language-ruby">def setup
-  @invoice1 = Invoice.new({id: 1,
-                           customer_id: 1,
-                           merchant_id: 12335938,
-                           status: "pending",
-                           created_at: "2009-02-07",
-                           updated_at: "2014-03-15"})
-  @invoice2 = Invoice.new({id: 2,
-                           customer_id: 1,
-                           merchant_id: 12334753,
-                           status: "shipped",
-                           created_at: "2009-02-07",
-                           updated_at: "2014-03-15"})
-  @invoice3 = Invoice.new({id: 3,
-                           customer_id: 2,
-                           merchant_id: 12334753,
-                           status: "pending",
-                           created_at: "2009-02-07",
-                           updated_at: "2014-03-15"})
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">setup</span>
+  <span class="vi">@invoice1</span> <span class="o">=</span> <span class="no">Invoice</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span><span class="ss">id: </span><span class="mi">1</span><span class="p">,</span>
+                           <span class="ss">customer_id: </span><span class="mi">1</span><span class="p">,</span>
+                           <span class="ss">merchant_id: </span><span class="mi">12335938</span><span class="p">,</span>
+                           <span class="ss">status: </span><span class="s2">"pending"</span><span class="p">,</span>
+                           <span class="ss">created_at: </span><span class="s2">"2009-02-07"</span><span class="p">,</span>
+                           <span class="ss">updated_at: </span><span class="s2">"2014-03-15"</span><span class="p">})</span>
+  <span class="vi">@invoice2</span> <span class="o">=</span> <span class="no">Invoice</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span><span class="ss">id: </span><span class="mi">2</span><span class="p">,</span>
+                           <span class="ss">customer_id: </span><span class="mi">1</span><span class="p">,</span>
+                           <span class="ss">merchant_id: </span><span class="mi">12334753</span><span class="p">,</span>
+                           <span class="ss">status: </span><span class="s2">"shipped"</span><span class="p">,</span>
+                           <span class="ss">created_at: </span><span class="s2">"2009-02-07"</span><span class="p">,</span>
+                           <span class="ss">updated_at: </span><span class="s2">"2014-03-15"</span><span class="p">})</span>
+  <span class="vi">@invoice3</span> <span class="o">=</span> <span class="no">Invoice</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span><span class="ss">id: </span><span class="mi">3</span><span class="p">,</span>
+                           <span class="ss">customer_id: </span><span class="mi">2</span><span class="p">,</span>
+                           <span class="ss">merchant_id: </span><span class="mi">12334753</span><span class="p">,</span>
+                           <span class="ss">status: </span><span class="s2">"pending"</span><span class="p">,</span>
+                           <span class="ss">created_at: </span><span class="s2">"2009-02-07"</span><span class="p">,</span>
+                           <span class="ss">updated_at: </span><span class="s2">"2014-03-15"</span><span class="p">})</span>
 
-  @invoices = [invoice1, invoice2, invoice3]
-  @se       = SalesEngine.new
+  <span class="vi">@invoices</span> <span class="o">=</span> <span class="p">[</span><span class="n">invoice1</span><span class="p">,</span> <span class="n">invoice2</span><span class="p">,</span> <span class="n">invoice3</span><span class="p">]</span>
+  <span class="vi">@se</span>       <span class="o">=</span> <span class="no">SalesEngine</span><span class="p">.</span><span class="nf">new</span>
 
-  @ir = InvoiceRepository.new(@invoices, se)
-end
+  <span class="vi">@ir</span> <span class="o">=</span> <span class="no">InvoiceRepository</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="vi">@invoices</span><span class="p">,</span> <span class="n">se</span><span class="p">)</span>
+<span class="k">end</span>
 </code></pre>
+</div>
 
 <p>Looking at a few of our tests it seemed that the repos generally took an array in their initialize, so it just became a matter of creating three or four instances of whatever the repo is supposed to hold, putting those into an array, and then passing that array to the repo. That put us in pretty much the same place as we were for our Items/Merchants testing, and we could just look to the top of the test to see what we were expecting.</p>
 
@@ -94,17 +97,18 @@ end
 
 <p>For Sales Engine and Sales Analyst we wanted to use actual data, but not all of it. We took the data and cut out some chunks (usually around 25 rows or so, sometimes more) that we could use to do our testing and put those into a test_data folder in our test folder. We then initialize SE and/or SA with references to the test data instead of the full data set.</p>
 
-<pre><code class="language-ruby">def setup
-  @se = SalesEngine.from_csv({
-    :items         =&gt; "./test/test_data/items_stub.csv",
-    :merchants     =&gt; "./test/test_data/merchants_stub.csv",
-    :invoices      =&gt; "./test/test_data/invoices_stub.csv",
-    :invoice_items =&gt; "./test/test_data/invoice_items_stub.csv",
-    :transactions  =&gt; "./test/test_data/transactions_stub.csv",
-    :customers     =&gt; "./test/test_data/customers_stub.csv"
-  })
-end
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">setup</span>
+  <span class="vi">@se</span> <span class="o">=</span> <span class="no">SalesEngine</span><span class="p">.</span><span class="nf">from_csv</span><span class="p">({</span>
+    <span class="ss">:items</span>         <span class="o">=&gt;</span> <span class="s2">"./test/test_data/items_stub.csv"</span><span class="p">,</span>
+    <span class="ss">:merchants</span>     <span class="o">=&gt;</span> <span class="s2">"./test/test_data/merchants_stub.csv"</span><span class="p">,</span>
+    <span class="ss">:invoices</span>      <span class="o">=&gt;</span> <span class="s2">"./test/test_data/invoices_stub.csv"</span><span class="p">,</span>
+    <span class="ss">:invoice_items</span> <span class="o">=&gt;</span> <span class="s2">"./test/test_data/invoice_items_stub.csv"</span><span class="p">,</span>
+    <span class="ss">:transactions</span>  <span class="o">=&gt;</span> <span class="s2">"./test/test_data/transactions_stub.csv"</span><span class="p">,</span>
+    <span class="ss">:customers</span>     <span class="o">=&gt;</span> <span class="s2">"./test/test_data/customers_stub.csv"</span>
+  <span class="p">})</span>
+<span class="k">end</span>
 </code></pre>
+</div>
 
 <p>This became a little tricky when Sales Analyst started to look for outliers that are two above the standard deviation. Pretty consistently we had to go in to tweak the data so that, for example, we had enough Sunday purchases to make sure that we didnt get an empty array when trying to find outliers.</p>
 

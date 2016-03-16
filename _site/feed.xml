@@ -5,8 +5,8 @@
     <description></description>
     <link>http://s-espinosa.github.io/</link>
     <atom:link href="http://s-espinosa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Mar 2016 11:03:28 -0500</pubDate>
-    <lastBuildDate>Wed, 16 Mar 2016 11:03:28 -0500</lastBuildDate>
+    <pubDate>Wed, 16 Mar 2016 11:08:10 -0500</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2016 11:08:10 -0500</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -21,23 +21,25 @@
 
 &lt;p&gt;For our low level classes (merchant, item, etc.) we used a setup method to hold a hash contianing info we would expect from a single line of CSV.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def setup
-  @invoice = Invoice.new({:id          =&amp;gt; 6,
-                          :customer_id =&amp;gt; 7,
-                          :merchant_id =&amp;gt; 8,
-                          :status      =&amp;gt; &quot;pending&quot;,
-                          :created_at  =&amp;gt; &quot;2014-03-15&quot;,
-                          :updated_at  =&amp;gt; &quot;2014-03-15&quot;,
-  })
-end
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@invoice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;ss&quot;&gt;:customer_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;ss&quot;&gt;:merchant_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;ss&quot;&gt;:status&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pending&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;ss&quot;&gt;:created_at&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;ss&quot;&gt;:updated_at&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The main benefit of this approach is that it’s pretty easy to look to the top of the test and see what exactly we expect to be in a given Invoice instance: if the id is 6 in the hash, then the test pretty much writes itself.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def test_it_has_an_id
-  assert_equal 6, @invoice.id
-end
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_it_has_an_id&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;assert_equal&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We used examples from the spec when available. More info &lt;a href=&quot;http://chriskottom.com/blog/2014/10/4-fantastic-ways-to-set-up-state-in-minitest/&quot;&gt;here&lt;/a&gt; on how to create a setup method that will run prior to your tests, though in retrospect I realize that this runs before &lt;em&gt;each&lt;/em&gt; test. I’d rather have it run once before all the tests.&lt;/p&gt;
 
@@ -45,32 +47,33 @@ end
 
 &lt;p&gt;For our repos, we took more or less the same approach, but in the setup method we’ve been creating a few instances of the thing the repo is supposed to hold (some items, merchants, or whatever), and then feeding those into the repo using new.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def setup
-  @invoice1 = Invoice.new({id: 1,
-                           customer_id: 1,
-                           merchant_id: 12335938,
-                           status: &quot;pending&quot;,
-                           created_at: &quot;2009-02-07&quot;,
-                           updated_at: &quot;2014-03-15&quot;})
-  @invoice2 = Invoice.new({id: 2,
-                           customer_id: 1,
-                           merchant_id: 12334753,
-                           status: &quot;shipped&quot;,
-                           created_at: &quot;2009-02-07&quot;,
-                           updated_at: &quot;2014-03-15&quot;})
-  @invoice3 = Invoice.new({id: 3,
-                           customer_id: 2,
-                           merchant_id: 12334753,
-                           status: &quot;pending&quot;,
-                           created_at: &quot;2009-02-07&quot;,
-                           updated_at: &quot;2014-03-15&quot;})
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@invoice1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;customer_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;merchant_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12335938&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;status: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pending&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;created_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2009-02-07&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;updated_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@invoice2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;customer_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;merchant_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12334753&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;status: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;shipped&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;created_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2009-02-07&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;updated_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@invoice3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;customer_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;merchant_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12334753&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;status: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pending&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;created_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2009-02-07&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                           &lt;span class=&quot;ss&quot;&gt;updated_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 
-  @invoices = [invoice1, invoice2, invoice3]
-  @se       = SalesEngine.new
+  &lt;span class=&quot;vi&quot;&gt;@invoices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;invoice1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;invoice2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;invoice3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@se&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SalesEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
 
-  @ir = InvoiceRepository.new(@invoices, se)
-end
+  &lt;span class=&quot;vi&quot;&gt;@ir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;InvoiceRepository&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@invoices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;se&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Looking at a few of our tests it seemed that the repos generally took an array in their initialize, so it just became a matter of creating three or four instances of whatever the repo is supposed to hold, putting those into an array, and then passing that array to the repo. That put us in pretty much the same place as we were for our Items/Merchants testing, and we could just look to the top of the test to see what we were expecting.&lt;/p&gt;
 
@@ -78,17 +81,18 @@ end
 
 &lt;p&gt;For Sales Engine and Sales Analyst we wanted to use actual data, but not all of it. We took the data and cut out some chunks (usually around 25 rows or so, sometimes more) that we could use to do our testing and put those into a test_data folder in our test folder. We then initialize SE and/or SA with references to the test data instead of the full data set.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def setup
-  @se = SalesEngine.from_csv({
-    :items         =&amp;gt; &quot;./test/test_data/items_stub.csv&quot;,
-    :merchants     =&amp;gt; &quot;./test/test_data/merchants_stub.csv&quot;,
-    :invoices      =&amp;gt; &quot;./test/test_data/invoices_stub.csv&quot;,
-    :invoice_items =&amp;gt; &quot;./test/test_data/invoice_items_stub.csv&quot;,
-    :transactions  =&amp;gt; &quot;./test/test_data/transactions_stub.csv&quot;,
-    :customers     =&amp;gt; &quot;./test/test_data/customers_stub.csv&quot;
-  })
-end
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@se&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SalesEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;from_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:items&lt;/span&gt;         &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/items_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:merchants&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/merchants_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:invoices&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/invoices_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:invoice_items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/invoice_items_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:transactions&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/transactions_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:customers&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/customers_stub.csv&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This became a little tricky when Sales Analyst started to look for outliers that are two above the standard deviation. Pretty consistently we had to go in to tweak the data so that, for example, we had enough Sunday purchases to make sure that we didnt get an empty array when trying to find outliers.&lt;/p&gt;
 
