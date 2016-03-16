@@ -82,4 +82,6 @@ a {
 	width: 320px;
 	display: block;
 	float: left;
+	margin-top: 0px;
+	margin-right: 20px;
 }
