@@ -15,7 +15,7 @@ At a high level, the assignment was as follows: we were given 6 csv's, filled to
 
 ### Items, Merchants, Etc.
 
-For our low level classes (merchant, item, etc.) we used a setup method to hold a hash contianing info we would expect from a single line of CSV.
+For our low level classes (merchant, item, etc.) we used a setup method to hold a hash containing info we would expect from a single line of CSV.
 
 ```ruby
 def setup
