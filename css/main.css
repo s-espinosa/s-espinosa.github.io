@@ -47,6 +47,7 @@ nav a:hover {
 
 h2, h3, p {
 	padding-left: 10px;
+	padding-right: 10px;
 }
 
 h2 {
@@ -64,6 +65,7 @@ h3 {
 
 main img {
   width: 960px;
+	padding-top: 10px;
 }
 
 p {
