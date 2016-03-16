@@ -1,4 +1,4 @@
-.highlight { font-family: monospace; background-color: #EEEEEE; padding: 10px }
+.highlight { font-family: monospace; background-color: #EEEEEE; padding: 10px; margin-bottom: 10px}
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
