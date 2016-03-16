@@ -39,10 +39,19 @@ nav a:hover {
   background-color: #992222;
 }
 
-main {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+main img {
+  width: 960px;
+	padding-top: 15px;
+}
+
+h2, h3, p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.highlight {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 h2 {
@@ -55,16 +64,12 @@ h3 {
 	color: #553333;
 	margin-top: 35px;
   font-size: 1.5em;
-}
-
-main img {
-  width: 960px;
-  margin-left: -10px;
+	font-style: italic;
 }
 
 p {
   color: #553333;
-	font-size: 1.25em;
+	font-size: 1.35em;
 	line-height: 1.5;
 	margin-bottom: 10px;
 }
