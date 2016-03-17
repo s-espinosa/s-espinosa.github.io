@@ -6,7 +6,7 @@ relative_url: "../"
 
 [Personal Site](https://github.com/s-espinosa/s-espinosa.github.io) - The repository holding the code for this site built using GitHub's Jekyll static site generator.
 
-[Complete Me](https://github.com/s-espinosa/complete_me) - A project to emulate autocomplete functionality in Ruby using a trie. To some degree, the Complete Me project was an extension of our [Binary Search Tree](https://github.com/s-espinosa/binary_search_trees) project.
+[Complete Me](https://github.com/s-espinosa/complete_me) - A project to emulate autocomplete functionality in Ruby using a [trie](https://en.wikipedia.org/wiki/Trie). To some degree, the Complete Me project was an extension of our [Binary Search Tree](https://github.com/s-espinosa/binary_search_trees) project.
 
 [Sorting Suite](https://github.com/s-espinosa/sorting_suite) - A basic suite of sorting algorithms built in Ruby.
 
