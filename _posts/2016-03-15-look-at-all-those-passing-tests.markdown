@@ -6,6 +6,7 @@ categories:  testing
 image:       tests.jpg
 small-image: small_tests.jpg
 description: "The one where I try to explain my testing strategy for Turing's Black Thursday project"
+relative_url: "../../../../"
 ---
 Recently, a cohort member asked me what my approach to testing Turing's [Black Thursday](https://github.com/turingschool/curriculum/blob/master/source/projects/black_thursday.markdown) project had been. This project has been filling my days (and sometimes my nights), so I suppose I shouldn't have been surprised when I realized I had a lot to say on the subject. I'm not altogether convinced I have a full handle on the terminology ([stubs? fixtures? mocks? doubles?](http://martinfowler.com/articles/mocksArentStubs.html)), but here’s what [Kris](https://github.com/kristindiannefoss) (my partner on this project) and I came up with this time around.
 

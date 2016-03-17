@@ -1,4 +1,5 @@
 ---
-layout:     posts
-title:      "Posts"
+layout:       posts
+title:        "Posts"
+relative_url: "../"
 ---

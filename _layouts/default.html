@@ -8,10 +8,10 @@
     {% include header.html %}
 
     <main class="wrapper">
-      {% if page.image %}<img src="{{ site.url }}/image/{{ page.image }}">{% endif %}
+      {% if page.image %}<img src="{{ page.relative_url }}image/{{ page.image }}">{% endif %}
 
       <h2>{{ page.title }}</h2>
-      
+
       {{ content }}
 
     </main>

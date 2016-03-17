@@ -1,4 +1,5 @@
 ---
-layout:     default
-title:      "GitHub"
+layout:       default
+title:        "GitHub"
+relative_url: "../"
 ---

@@ -1,4 +1,5 @@
 ---
-layout:     default
-title:      "Music"
+layout:       default
+title:        "Music"
+relative_url: "../"
 ---

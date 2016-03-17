@@ -2,6 +2,7 @@
 layout: default
 title:  "This is not my beautiful house."
 image:  "skyline.jpg"
+relative_url: ""
 ---
 
 I'm in the midst of studying at the [Turing School for Software & Design](http://www.turing.io), trying to pick up the skills I'll need to be a web developer. I took the plunge, moved from Brooklyln (see above), to Denver (photo coming soon), and have been, thus far, enjoying it thoroughly.

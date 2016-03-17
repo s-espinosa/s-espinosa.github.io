@@ -1,4 +1,5 @@
 ---
-layout:     default
-title:      "Media"
+layout:       default
+title:        "Media"
+relative_url: "../"
 ---
