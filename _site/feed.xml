@@ -5,8 +5,8 @@
     <description></description>
     <link>http://s-espinosa.github.io/</link>
     <atom:link href="http://s-espinosa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Mar 2016 14:17:23 -0500</pubDate>
-    <lastBuildDate>Thu, 17 Mar 2016 14:17:23 -0500</lastBuildDate>
+    <pubDate>Thu, 17 Mar 2016 20:50:28 -0600</pubDate>
+    <lastBuildDate>Thu, 17 Mar 2016 20:50:28 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -108,7 +108,7 @@
 
 &lt;p&gt;Listen, I’m not redoing my tests now, okay? That said, I think next time we’ll likely push synthetic data earlier, and try to get a more thorough understanding of the relationships/shape of the project. This should help to keep us from having to reconfigure the data and keep the testing cycle relatively painless. If nothing else this project taught me the value of being able to cycle through your tests and continue coding without having to wait for tests to pass. I promise to do better next time.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Mar 2016 11:01:46 -0500</pubDate>
+        <pubDate>Tue, 15 Mar 2016 10:01:46 -0600</pubDate>
         <link>http://s-espinosa.github.io/testing/2016/03/15/look-at-all-those-passing-tests.html</link>
         <guid isPermaLink="true">http://s-espinosa.github.io/testing/2016/03/15/look-at-all-those-passing-tests.html</guid>
         
