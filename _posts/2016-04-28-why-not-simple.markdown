@@ -3,8 +3,8 @@ layout:      default
 title:       "Towards an Agile User Experience"
 date:        2016-04-28 11:01:46 -0500
 categories:  UI
-image:       NEEDANIMAGE.jpg
-small-image: STILLNEEDANIMAGE.jpg
+image:       zelda.jpg
+small-image: small_zelda.jpg
 description: "The one where I think about how to teach users to do things."
 relative_url: "../../../../"
 ---
