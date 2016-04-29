@@ -5,10 +5,9 @@
     <description></description>
     <link>http://s-espinosa.github.io/</link>
     <atom:link href="http://s-espinosa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 29 Apr 2016 10:37:31 -0600</pubDate>
-    <lastBuildDate>Fri, 29 Apr 2016 10:37:31 -0600</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
-    
+    <pubDate>Fri, 29 Apr 2016 07:24:08 -0600</pubDate>
+    <lastBuildDate>Fri, 29 Apr 2016 07:24:08 -0600</lastBuildDate>
+    <generator>Jekyll v3.1.0</generator>
       <item>
         <title>Towards an Agile User Experience</title>
         <description>&lt;p&gt;I would totally link you to Jeremy Fish’s Twitter profile, except for everyone on the internet hates him and he deleted his twitter account. For some background, Fish was one of the subjects of the documentary Indie Game, which showed him creating the game Fez. It’s a beautiful game. It looks like it was a pain to develop. It was a tortured process, and watching Fish move through it was pretty incredible. That said, his reputation on the internet is as one of kind of a jerk and/or baby. The video below will give you some idea of why.&lt;/p&gt;
@@ -17,11 +16,11 @@
 
 &lt;p&gt;If you didn’t bother to watch the movie, Fish basically talks about why he doesn’t like Japanese video games these days. He gets some help, and one of the other members of the panel talks about the difference between this:&lt;/p&gt;
 
-&lt;p&gt;OLD ZELDA IMAGE&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../image/itsdangerous.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;and this:&lt;/p&gt;
 
-&lt;p&gt;NEW ZELDA IMAGE&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../image/navi.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Which is fine as far as it goes. When people are playing video games it makes sense that you might not want to have all the answers given to you. You might be looking for a challenge. You might enjoy banging your head on a wall. The new iterations of some video games give a lot more clues as to what comes next, and they probably don’t scratch that itch.&lt;/p&gt;
 
@@ -29,38 +28,35 @@
 
 &lt;p&gt;Meanwhile, web applications tend to either leave out instructions or have instructions that look like this:&lt;/p&gt;
 
-&lt;p&gt;NOT GOOD INSTRUCTIONS IMAGE&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../image/facebook_instructions.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So what am I getting at? What can we learn from video games as we start to think about how to provide instructions to our users? I have three main takeaways.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Let users level up.&lt;/strong&gt; The first and most important thing that I think video games have to offer is that they offer users value immediately, teach them things, and then also let them see more of the game over time. They have a way of introducing you to features just as you’re getting to the point that you’re ready for them. If you’re in the midst of designing something ask yourself, “is there a minimum use case for our users? What’s the absolute minimum that someone could use and actually find valuable?”&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Provide inline instructions.&lt;/strong&gt; When’s the last time you opened a video game with a manual? They’ve gone the way of the dinosaur. Don’t ask your users to completely break out of your application to view instructions or tutorials. Offer them hints and tips as they use it, when they’re ready. One app that does a wonderful job of doing this is the TraktorDJ iPhone app.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1) Let users level up.&lt;/strong&gt; The first and most important thing that I think video games have to offer is that they offer users value immediately, teach them things, and then also let them see more of the game over time. They have a way of introducing you to features just as you’re getting to the point that you’re ready for them. If you’re in the midst of designing something ask yourself, “is there a minimum use case for our users? What’s the absolute minimum that someone could use and actually find valuable?”&lt;/p&gt;
 
-&lt;p&gt;Picture of instructions in the iphone&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) Provide inline instructions.&lt;/strong&gt; When’s the last time you opened a video game with a manual? They’ve gone the way of the dinosaur. Don’t ask your users to completely break out of your application to view instructions or tutorials. Offer them hints and tips as they use it, when they’re ready. One app that does a wonderful job of doing this is the TraktorDJ iPhone app.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Don’t bother your users.&lt;/strong&gt; On the other hand, there’s a limit. Navi in the new Zelda games serves as a navigator who’s constantly reminding you if you’re going the wrong way. She chirps at you (“Hey! Listen!”), and flies around to try to remind you of the task at hand. That’s fine, but it kind of reminds me of the Microsoft paperclip.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../image/traktor_inst.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;IMAGE of the PAPERCLIP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3) Don’t bother your users.&lt;/strong&gt; On the other hand, there’s a limit. Navi in the new Zelda games serves as a navigator who’s constantly reminding you if you’re going the wrong way. She chirps at you (“Hey! Listen!”), and flies around to try to remind you of the task at hand. That’s fine, but it kind of reminds me of the Microsoft paperclip.&lt;/p&gt;
 
-&lt;p&gt;This guy was just always getting in the way. Here’s another look at the Traktor iPhone app.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../image/clippy.jpg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;IMAGE OF THE ANNOYIN THING WHEN YOU HADN’T VISITED A TUTTORIAL&lt;/p&gt;
+&lt;p&gt;This guy was just always getting in the way. It’s shockingly difficult to find an image of him that’s not been somehow turned into a joke about how awful he was. Here’s another look at the Traktor iPhone app.&lt;/p&gt;
 
-&lt;p&gt;Now, that little button up in the left hand corner bothers me. It makes me want to learn more. It’s very much like a video game level that’s taunting me with the fact that I haven’t yet finished it. On the other hand, that’s something that I blame almost entirely on my own neuroses, and not at all on the application. Whether or not that’s fair is neither here nor there. I’m not annoyed at the app for trying to help me learn more about how to use it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../image/bothering.PNG&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, that little button with a badge up in the right hand corner bothers me. It makes me want to learn more. It’s very much like a video game level that’s taunting me with the fact that I haven’t yet finished it. On the other hand, that’s something that I blame almost entirely on my own neuroses, and not at all on the application. Whether or not that’s fair is neither here nor there. I’m not annoyed at the app for trying to help me learn more about how to use it.&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Apr 2016 10:01:46 -0600</pubDate>
         <link>http://s-espinosa.github.io/ui/2016/04/28/why-not-simple.html</link>
         <guid isPermaLink="true">http://s-espinosa.github.io/ui/2016/04/28/why-not-simple.html</guid>
         
-        
+
         <category>UI</category>
-        
+
       </item>
-    
+
       <item>
         <title>Look at all those passing tests.</title>
         <description>&lt;p&gt;Recently, a cohort member asked me what my approach to testing Turing’s &lt;a href=&quot;https://github.com/turingschool/curriculum/blob/master/source/projects/black_thursday.markdown&quot;&gt;Black Thursday&lt;/a&gt; project had been. This project has been filling my days (and sometimes my nights), so I suppose I shouldn’t have been surprised when I realized I had a lot to say on the subject. I’m not altogether convinced I have a full handle on the terminology (&lt;a href=&quot;http://martinfowler.com/articles/mocksArentStubs.html&quot;&gt;stubs? fixtures? mocks? doubles?&lt;/a&gt;), but here’s what &lt;a href=&quot;https://github.com/kristindiannefoss&quot;&gt;Kris&lt;/a&gt; (my partner on this project) and I came up with this time around.&lt;/p&gt;
@@ -73,25 +69,25 @@
 
 &lt;p&gt;For our low level classes (merchant, item, etc.) we used a setup method to hold a hash containing info we would expect from a single line of CSV.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@invoice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                          &lt;span class=&quot;ss&quot;&gt;:customer_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                          &lt;span class=&quot;ss&quot;&gt;:merchant_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                          &lt;span class=&quot;ss&quot;&gt;:status&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pending&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                          &lt;span class=&quot;ss&quot;&gt;:created_at&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                          &lt;span class=&quot;ss&quot;&gt;:updated_at&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby
+def setup
+  @invoice = Invoice.new({:id          =&amp;gt; 6,
+                          :customer_id =&amp;gt; 7,
+                          :merchant_id =&amp;gt; 8,
+                          :status      =&amp;gt; &quot;pending&quot;,
+                          :created_at  =&amp;gt; &quot;2014-03-15&quot;,
+                          :updated_at  =&amp;gt; &quot;2014-03-15&quot;,
+  })
+end
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The main benefit of this approach is that it’s pretty easy to look to the top of the test and see what exactly we expect to be in a given Invoice instance: if the id is 6 in the hash, then the test pretty much writes itself.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_it_has_an_id&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;assert_equal&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby
+def test_it_has_an_id
+  assert_equal 6, @invoice.id
+end
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;We used examples from the spec when available. More info &lt;a href=&quot;http://chriskottom.com/blog/2014/10/4-fantastic-ways-to-set-up-state-in-minitest/&quot;&gt;here&lt;/a&gt; on how to create a setup method that will run prior to your tests, though in retrospect I realize that this runs before &lt;em&gt;each&lt;/em&gt; test. I’d rather have it run once before all the tests.&lt;/p&gt;
 
@@ -99,33 +95,33 @@
 
 &lt;p&gt;For our repos, we took more or less the same approach, but in the setup method we’ve been creating a few instances of the thing the repo is supposed to hold (some items, merchants, or whatever), and then feeding those into the repo using new.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@invoice1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;customer_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;merchant_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12335938&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;status: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pending&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;created_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2009-02-07&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;updated_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@invoice2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;customer_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;merchant_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12334753&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;status: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;shipped&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;created_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2009-02-07&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;updated_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@invoice3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;customer_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;merchant_id: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12334753&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;status: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pending&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;created_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2009-02-07&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                           &lt;span class=&quot;ss&quot;&gt;updated_at: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-03-15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;p&gt;```ruby
+def setup
+  @invoice1 = Invoice.new({id: 1,
+                           customer_id: 1,
+                           merchant_id: 12335938,
+                           status: “pending”,
+                           created_at: “2009-02-07”,
+                           updated_at: “2014-03-15”})
+  @invoice2 = Invoice.new({id: 2,
+                           customer_id: 1,
+                           merchant_id: 12334753,
+                           status: “shipped”,
+                           created_at: “2009-02-07”,
+                           updated_at: “2014-03-15”})
+  @invoice3 = Invoice.new({id: 3,
+                           customer_id: 2,
+                           merchant_id: 12334753,
+                           status: “pending”,
+                           created_at: “2009-02-07”,
+                           updated_at: “2014-03-15”})&lt;/p&gt;
 
-  &lt;span class=&quot;vi&quot;&gt;@invoices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;invoice1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;invoice2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;invoice3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@se&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SalesEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;p&gt;@invoices = [invoice1, invoice2, invoice3]
+  @se       = SalesEngine.new&lt;/p&gt;
 
-  &lt;span class=&quot;vi&quot;&gt;@ir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;InvoiceRepository&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@invoices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;se&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;@ir = InvoiceRepository.new(@invoices, se)
+end
+```&lt;/p&gt;
 
 &lt;p&gt;Looking at a few of our tests it seemed that the repos generally took an array in their initialize, so it just became a matter of creating three or four instances of whatever the repo is supposed to hold, putting those into an array, and then passing that array to the repo. That put us in pretty much the same place as we were for our Items/Merchants testing, and we could just look to the top of the test to see what we were expecting.&lt;/p&gt;
 
@@ -133,18 +129,18 @@
 
 &lt;p&gt;For Sales Engine and Sales Analyst we wanted to use actual data, but not all of it. We took the data and cut out some chunks (usually around 25 rows or so, sometimes more) that we could use to do our testing and put those into a test_data folder in our test folder. We then initialize SE and/or SA with references to the test data instead of the full data set.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@se&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SalesEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;from_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;:items&lt;/span&gt;         &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/items_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;:merchants&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/merchants_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;:invoices&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/invoices_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;:invoice_items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/invoice_items_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;:transactions&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/transactions_stub.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;ss&quot;&gt;:customers&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./test/test_data/customers_stub.csv&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby
+def setup
+  @se = SalesEngine.from_csv({
+    :items         =&amp;gt; &quot;./test/test_data/items_stub.csv&quot;,
+    :merchants     =&amp;gt; &quot;./test/test_data/merchants_stub.csv&quot;,
+    :invoices      =&amp;gt; &quot;./test/test_data/invoices_stub.csv&quot;,
+    :invoice_items =&amp;gt; &quot;./test/test_data/invoice_items_stub.csv&quot;,
+    :transactions  =&amp;gt; &quot;./test/test_data/transactions_stub.csv&quot;,
+    :customers     =&amp;gt; &quot;./test/test_data/customers_stub.csv&quot;
+  })
+end
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;This became a little tricky when Sales Analyst started to look for outliers that are two above the standard deviation. Pretty consistently we had to go in to tweak the data so that, for example, we had enough Sunday purchases to make sure that we didnt get an empty array when trying to find outliers.&lt;/p&gt;
 
@@ -163,11 +159,11 @@
         <pubDate>Tue, 15 Mar 2016 10:01:46 -0600</pubDate>
         <link>http://s-espinosa.github.io/testing/2016/03/15/look-at-all-those-passing-tests.html</link>
         <guid isPermaLink="true">http://s-espinosa.github.io/testing/2016/03/15/look-at-all-those-passing-tests.html</guid>
-        
-        
+
+
         <category>testing</category>
-        
+
       </item>
-    
+
   </channel>
 </rss>
