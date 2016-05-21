@@ -9,7 +9,7 @@ PROJECTS
 [Super Coders](http://super-coders.herokuapp.com/) ([GitHub](https://github.com/thompickett/super-coders)): Rails project using fresh code base to implement basic cart and checkout functionality.
 [Eccentric Photos](http://eccentric-photos.herokuapp.com/) ([GitHub](https://github.com/Jbern16/the_pivot)): Rails project using existing code base to re-implement cart and checkout functionality with multitenancy.  
 [Win Lose Banana](http://winlosebanana.net/) ([GitHub](https://github.com/s-espinosa/win_lose_banana)): Online implementation of a three-person card game deployed to Digital Ocean.
-
+Complete Me ([GitHub](https://github.com/s-espinosa/complete_me)): Exploration of tries to create autocomplete functionality in Ruby.
 
 PREVIOUS EXPERIENCE
 EMAX FINANCIAL AND REAL ESTATE ADVISORY SERVICES,LLC
