@@ -1,0 +1,36 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 25vh;
+  font-family: "capitolina";
+  text-decoration: underline;
+  font-size: 4em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.stripe {
+  color: white;
+  background-color: #CF2630;
+  padding: 1px;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
