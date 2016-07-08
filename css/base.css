@@ -4,12 +4,11 @@ body {
   text-align: center;
   background-color: #232323;
   color: #232323;
+  font-family: "futura-pt", sans-serif;
 }
 
 h1 {
   margin-top: 25vh;
-  font-family: "capitolina";
-  text-decoration: underline;
   font-size: 4em;
   margin-bottom: 10px;
   font-weight: bold;
