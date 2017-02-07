@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #202025;
+  font-family: "futura-pt";
+  font-weight: 200;
+  background-image: url("../img/sal_bw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+html, body, .page {
+  height: 100%; }
+
+.page {
+  display: flex;
+  flex-direction: column; }
+
+header {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+main {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.container {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.75);
+  border: 0;
+  padding: 0;
+  color: #FFFFFF;
+  padding: 20px; }
+
+nav {
+  width: 50%;
+  background-color: #F86925;
+  color: #FFFFFF;
+  text-align: center; }
+
+nav:hover {
+  background-color: #1E8BC4;
+  cursor: pointer; }
+
+h1 {
+  font-family: "futura-pt-bold";
+  font-size: 3em;
+  padding: 0px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 20px; }
+
+h2 {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=main.css.map */

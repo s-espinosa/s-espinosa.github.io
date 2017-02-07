@@ -1,0 +1,89 @@
+$primary-color:   #F86925;
+$secondary-color: #1E8BC4;
+$dark-gray:       rgba(50, 50, 50, 0.75);
+$heading-font:   "futura-pt-bold";
+$body-font:      "futura-pt";
+$body-font-weight: 200;
+$inverse-text:   #FFFFFF;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #202025;
+  font-family: $body-font;
+  font-weight: $body-font-weight;
+  background-image: url('../img/sal_bw.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body, .page {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+main {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  background-color: $dark-gray;
+  border: 0;
+  padding: 0;
+  color: $inverse-text;
+  padding: 20px;
+}
+
+nav {
+  width: 50%;
+  background-color: $primary-color;
+  color: $inverse-text;
+  text-align: center;
+}
+
+nav:hover {
+  background-color: $secondary-color;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: $heading-font;
+  font-size: 3em;
+  padding: 0px;
+  color: $inverse-text;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: $inverse-text;
+  margin: 0;
+  padding: 0;
+}
