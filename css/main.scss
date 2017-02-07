@@ -1,53 +1,89 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+$primary-color:   #F86925;
+$secondary-color: #1E8BC4;
+$dark-gray:       rgba(50, 50, 50, 0.75);
+$heading-font:   "futura-pt-bold";
+$body-font:      "futura-pt";
+$body-font-weight: 200;
+$inverse-text:   #FFFFFF;
 
-
-
-// Our variables
-$base-font-family: "futura-pt", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+html {
+  box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
 
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #202025;
+  font-family: $body-font;
+  font-weight: $body-font-weight;
+  background-image: url('../img/sal_bw.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body, .page {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+main {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  background-color: $dark-gray;
+  border: 0;
+  padding: 0;
+  color: $inverse-text;
+  padding: 20px;
+}
+
+nav {
+  width: 50%;
+  background-color: $primary-color;
+  color: $inverse-text;
+  text-align: center;
+}
+
+nav:hover {
+  background-color: $secondary-color;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: $heading-font;
+  font-size: 3em;
+  padding: 0px;
+  color: $inverse-text;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: $inverse-text;
+  margin: 0;
+  padding: 0;
+}
