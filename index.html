@@ -10,17 +10,81 @@
   </head>
   <body>
     <div class="page">
-      <header>
-        <nav>
-          <h1>Sal Espinosa</h1>
-        </nav>
-      </header>
-      <main role="main">
+      <div class="container"></div>
       <div class="container">
-        <h2>Content</h2>
-        <p>Content</p>
+        <header>
+          <h1>Sal Espinosa</h1>
+        </header>
+        <nav>
+          <a href="#"><div class="links">About</div></a>
+          <a href="#"><div class="links">Web</div></a>
+          <a href="#"><div class="links">Consulting</div></a>
+          <a href="#"><div class="links">Work</div></a>
+          <a href="#"><div class="links">Education</div></a>
+        </nav>
+        <main role="main">
+          <section class="home">
+            <h2>Web developer.</h2>
+            <h2>Consulting background.</h2>
+            <h2>Teaching Rails basics.</h2>
+          </section>
+          <section class="about">
+            <p>As a web developer with professional experience in education and financial consulting, I bring a strong mix of analytical ability and collaborative skills. I optimize and refactor, dig into data, pull out insights, but the teacher in me still loves to explain how things work and find the best in people. I believe that makes the teams I work on stronger.</p>
+          </section>
+          <section class="web">
+            <h2>Trelora Dynamic Billboards</h2>
+
+            <p>Trelora was looking to make use of the multiple client-facing monitors they had in their offices in Denver, Colorado. They already had an API that provided pictures of homes sold and up for sale along with messages associated with those transactions. I worked with a collaborator to create an application that would consume the existing API, filter based on photo availability, and serve the results to monitors throughout the office. Additionally, the same application allowed administrators to point the client TVs to a single site, identify the TV, and then assign a specific feed to each TV based on an ID that it would display until it had been configured.</p>
+
+            <h2>Demo Night Voting</h2>
+
+            <p>Turing had been using Google forms to solicit student feedback on demo night presentations. The forms got the job done, but also provided room for improvement. Working with another alumnus and current student, I created an application to allow students to register to demo, and submit votes on projects. The project also allows administrators to manage demo nights from creation to close, and provides views to display voting results. It was particularly rewarding to rally developers to create an application with no benefit but the satisfaction that comes with seeing it used in the wild.</p>
+          </section>
+          <section class="consulting">
+            <h2>Housing and Urban Development</h2>
+            <p>Following the housing crisis of 2008, the Department of Housing and Urban Development revived its single family loan sale program. Over the course of the next five years, HUD sold over eighty thousand loans with a total unpaid principal balance of over thirteen billion dollars. With a team that hovered near six people, I helped to review, and verify data collected by another contractor that was used to market the loans. Once loans had been sold, the same team worked to help collect, aggregate, and analyze reporting data from purchasers. As the program grew, we consulted on database design and eventually assisted with the creation of a web-based tool to accept purchaser data submissions.</p>
+
+            <h2>Veterans Administration</h2>
+
+            <p>The Department of Veterans Affairs has a portfolio of leases to private entities whereby those entities provide services to veterans in lieu of or in addition to cash payments. In order to monitor this system, the VA uses a network of on-site employees to coordinate with lesees to collect data to ensure that the required services and maintenance are being performed. I worked with a group that varied in size from three to six people to organize information collected from these on-site monitors, analyze and stratify the resulting data, and ultimately prepare an annual report to Congress. After first collecting project information via email in order to prepare the first report, we worked with the VA to set up a SharePoint site to allow monitors to enter the data directly.</p>
+          </section>
+          <section class="work">
+            <h2>Turing School of Software & Design, Denver, Colorado</h2>
+            <h3>Teaching Assistant: 2016, Assistant Teacher: 2017</h3>
+            <ul>
+              <li>Created projects and lesson plans, reviewed student work and provided guidance</li>
+              <li>Worked to develop web-based applications to use internally</li>
+            </ul>
+
+            <h2>Emax Financial & Real Estate Advisory Services, LLC, New York, New York</h2>
+            <h3>Associate: 2006 – 2007, Director: 2008 – 2011, Managing Director: 2012 – 2015</h3>
+            <ul>
+              <li>Provided real estate advisory services to federal agencies managing teams of four to eight people</li>
+              <li>Preliminary database design, and analysis of historical program data</li>
+              <li>Prepared analyses for decision makers in slides, briefings, and longer reports</li>
+            </ul>
+            <h2>America’s School of Heroes, Queens, New York</h2>
+            <h3>Teacher: 2003 – 2006</h3>
+            <ul>
+              <li>Taught reading comprehension and writing to a diverse student population</li>
+              <li>Prepared daily lesson plans, assignments, and examinations for classes of more than thirty seventh and eighth graders</li>
+            </ul>
+          </section>
+          <section class="education">
+            <h2>Turing School of Software & Design, Denver, Colorado</h2>
+            <h3>Student: 2016</h3>
+            <p>Certificate in Web Application Development with Ruby, Rails, and JavaScript</p>
+            <h2>Harvard College, Cambridge, Massachusetts</h2>
+            <h3>B.A. Literature, Cum Laude: 1998 – 2002</h3>
+            <p>Varied coursework including multivariable calculus, and graphic design</p>
+          </section>
+        </main>
       </div>
-      </main>
     </div>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </html>
