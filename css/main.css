@@ -28,6 +28,9 @@ html, body, .page {
 
 header {
   background-color: #F86925;
+  border-right: 1px solid #E75814;
+  border-left: 1px solid #E75814;
+  border-bottom: 1px solid #E75814;
   padding: 20px;
   text-align: center;
   color: white; }
@@ -49,7 +52,7 @@ nav {
       border-top: 1px solid #E75814;
       border-right: 1px solid #E75814;
       border-left: 1px solid #E75814; }
-      nav a .links:hover {
+      nav a .links:hover, nav a .links.active {
         background-color: #1E8BC4;
         border-top: 1px solid #0D7AB3;
         border-right: 1px solid #0D7AB3;
