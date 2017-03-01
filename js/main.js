@@ -2,14 +2,14 @@ $( document ).ready(function() {
   $("section.home").fadeIn(400);
 
   $(".links").on("click", function(){
-    deactivateLinks();
+    deactivateLink();
     activateLink($(this));
 
     var section = $(this).prop("classList")[1]
     swapSection(section);
   });
 
-  function deactivateLinks() {
+  function deactivateLink() {
     $(".links.active").removeClass("active")
   }
 
